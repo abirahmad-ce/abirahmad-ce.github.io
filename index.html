@@ -1,454 +1,1453 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abir Ahmad — Civil Engineering Researcher</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Portfolio of Abir Ahmad, a Civil Engineering graduate from IUT with interests in transportation engineering, traffic safety, ITS, and computer vision." name="description"/>
+<meta content="#0d2238" name="theme-color"/>
+<title>Abir Ahmad | Civil Engineer</title>
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d2238'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='Georgia,serif' font-size='28' fill='%23f4efe7'%3EAA%3C/text%3E%3C/svg%3E" rel="icon"/>
+<script>document.documentElement.classList.add("js");</script>
 <style>
-:root{--navy:#1B3F6E;--navy-dark:#12294a;--navy-mid:#2563EB;--blue-light:#DBEAFE;--blue-mid:#93C5FD;--gold:#B45309;--gold-light:#FEF3C7;--white:#FFFFFF;--off-white:#F8FAFC;--gray-50:#F8FAFC;--gray-100:#F1F5F9;--gray-200:#E2E8F0;--gray-400:#94A3B8;--gray-500:#64748B;--gray-600:#475569;--gray-800:#1E293B;--border:#CBD5E1;--nav-h:64px;--t:.3s ease}
-*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
-body{font-family:'Inter',sans-serif;background:var(--off-white);color:var(--gray-800);font-size:16px;line-height:1.7;overflow-x:hidden}
-nav{position:fixed;top:0;left:0;right:0;z-index:999;background:var(--navy);height:var(--nav-h);display:flex;align-items:center;justify-content:space-between;padding:0 40px;box-shadow:0 2px 20px rgba(0,0,0,.18)}
-.nav-logo{font-family:'Lora',serif;font-size:1.15rem;color:var(--white);text-decoration:none;cursor:pointer;transition:opacity var(--t)}.nav-logo span{color:var(--blue-mid)}.nav-logo:hover{opacity:.85}
-.nav-links{display:flex;gap:2px;list-style:none}
-.nav-links li a{font-size:.75rem;font-weight:500;color:rgba(255,255,255,.6);text-decoration:none;padding:6px 10px;border-radius:4px;letter-spacing:.03em;transition:all var(--t);cursor:pointer;white-space:nowrap}
-.nav-links li a:hover,.nav-links li a.active{color:var(--white);background:rgba(255,255,255,.12)}
-.nav-cta{font-size:.75rem;font-weight:600;color:var(--navy);background:var(--blue-mid);padding:8px 16px;border-radius:4px;text-decoration:none;letter-spacing:.04em;transition:all var(--t);cursor:pointer;white-space:nowrap;flex-shrink:0}.nav-cta:hover{background:var(--white)}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}.hamburger span{width:22px;height:2px;background:white;border-radius:2px}
-.page{display:none;min-height:100vh;padding-top:var(--nav-h)}.page.active{display:block;animation:fadeUp .4s ease}
-@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
-.container{max-width:1100px;margin:0 auto;padding:0 48px}
-.page-header{background:var(--navy);padding:60px 0 52px;position:relative;overflow:hidden}
-.page-header::after{content:'';position:absolute;right:-60px;top:-60px;width:280px;height:280px;border-radius:50%;background:rgba(255,255,255,.04);pointer-events:none}
-.page-header::before{content:'';position:absolute;left:0;bottom:0;width:100%;height:3px;background:linear-gradient(90deg,var(--gold),transparent)}
-.ph-inner{position:relative;z-index:1}
-.breadcrumb{font-family:'JetBrains Mono',monospace;font-size:.67rem;letter-spacing:.14em;color:var(--blue-mid);text-transform:uppercase;margin-bottom:10px}
-.page-title{font-family:'Lora',serif;font-size:clamp(1.9rem,4vw,2.9rem);color:var(--white);font-weight:600;line-height:1.1}
-.page-sub{font-size:.9rem;color:rgba(255,255,255,.5);margin-top:10px}
-.section-body{padding:60px 0}
-.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:translateY(0)}
-.reveal-delay-1{transition-delay:.12s}.reveal-delay-2{transition-delay:.24s}.reveal-delay-3{transition-delay:.36s}
-/* HOME */
-.hero-grid{display:grid;grid-template-columns:1fr 1fr;min-height:calc(100vh - var(--nav-h))}
-.hero-left{background:var(--navy-dark);display:flex;flex-direction:column;justify-content:center;padding:64px 56px;position:relative;overflow:hidden}
-.hero-left::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 20% 10%,rgba(37,99,235,.28) 0%,transparent 55%),radial-gradient(ellipse at 85% 90%,rgba(180,83,9,.14) 0%,transparent 50%);pointer-events:none}
-.hero-inner{position:relative;z-index:1;display:flex;flex-direction:column;gap:0}
-.hero-photo-wrap{width:200px;height:250px;overflow:hidden;margin-bottom:32px;flex-shrink:0;border:3px solid rgba(147,197,253,.2)}
-.hero-photo-wrap img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
-.hero-photo-ph{width:200px;height:250px;background:rgba(37,99,235,.15);border:2px dashed rgba(147,197,253,.35);display:flex;align-items:center;justify-content:center;margin-bottom:32px}
-.hero-photo-ph span{font-size:.7rem;color:var(--blue-mid);text-align:center;padding:10px;line-height:1.6}
-.hero-eyebrow{font-family:'JetBrains Mono',monospace;font-size:.67rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;display:block}
-.hero-name{font-family:'Lora',serif;font-size:clamp(2.8rem,5.5vw,4.2rem);color:var(--white);line-height:1.06;margin-bottom:12px}
-.hero-name em{font-style:italic;color:rgba(255,255,255,.38)}
-.hero-role{font-size:.88rem;color:rgba(255,255,255,.52);line-height:1.75;max-width:310px;margin-bottom:36px}
-.hero-social{display:flex;gap:8px;flex-wrap:wrap}
-.hero-social a{font-family:'JetBrains Mono',monospace;font-size:.67rem;letter-spacing:.07em;color:rgba(255,255,255,.48);border:1px solid rgba(255,255,255,.14);padding:7px 14px;text-decoration:none;text-transform:uppercase;transition:all var(--t)}
-.hero-social a:hover{color:var(--white);border-color:rgba(255,255,255,.5);background:rgba(255,255,255,.06)}
-.hero-right{background:var(--white);display:flex;flex-direction:column;justify-content:center;padding:72px 64px}
-.hero-tag{font-family:'JetBrains Mono',monospace;font-size:.67rem;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);margin-bottom:22px}
-.hero-bio{font-size:.97rem;color:var(--gray-600);line-height:1.88;margin-bottom:36px}.hero-bio strong{color:var(--gray-800);font-weight:600}
-.btn{display:inline-block;padding:13px 28px;font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:all var(--t);cursor:pointer;border:none;font-family:'Inter',sans-serif}
-.btn-primary{background:var(--navy);color:var(--white)}.btn-primary:hover{background:var(--navy-mid)}
-.btn-outline{border:2px solid var(--navy);color:var(--navy);background:transparent;margin-left:10px}.btn-outline:hover{background:var(--navy);color:var(--white)}
-/* EDUCATION */
-.timeline{display:flex;flex-direction:column;gap:3px}
-.tl-item{display:grid;grid-template-columns:200px 1fr;background:var(--white);border:1px solid var(--border);overflow:hidden;transition:box-shadow var(--t)}.tl-item:hover{box-shadow:0 4px 24px rgba(0,0,0,.07)}
-.tl-left{background:var(--navy);padding:28px 24px;display:flex;flex-direction:column;justify-content:flex-start}
-.tl-year{font-family:'JetBrains Mono',monospace;font-size:.68rem;color:var(--blue-mid);letter-spacing:.06em;margin-bottom:6px;line-height:1.5}
-.tl-org{font-size:.77rem;color:rgba(255,255,255,.55);line-height:1.5}
-.tl-right{padding:30px 36px}
-.tl-degree{font-family:'Lora',serif;font-size:1.12rem;color:var(--gray-800);margin-bottom:8px;line-height:1.25}
-.tl-gpa{font-family:'JetBrains Mono',monospace;font-size:.71rem;color:var(--gold);background:var(--gold-light);display:inline-block;padding:3px 12px;margin-bottom:14px}
-.tl-detail{font-size:.83rem;color:var(--gray-600);line-height:1.78}.tl-detail strong{color:var(--gray-800)}
-.badge{display:inline-block;background:var(--blue-light);color:var(--navy);font-size:.69rem;font-weight:500;padding:3px 10px;margin:3px 3px 0 0;border-radius:2px}
-/* RESEARCH */
-.research-grid{display:grid;grid-template-columns:1fr 360px;gap:48px;align-items:start}
-.research-text p{font-size:.95rem;color:var(--gray-600);line-height:1.88;margin-bottom:18px}.research-text p strong{color:var(--gray-800)}
-.tags-wrap{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
-.tag{font-family:'JetBrains Mono',monospace;font-size:.69rem;border:1px solid var(--border);color:var(--gray-500);padding:6px 14px;background:var(--white);transition:all var(--t)}.tag:hover{border-color:var(--navy);color:var(--navy)}
-.tools-box{background:var(--navy-dark);padding:36px}
-.tools-label{font-family:'JetBrains Mono',monospace;font-size:.63rem;letter-spacing:.13em;text-transform:uppercase;color:rgba(255,255,255,.32);margin-bottom:20px}
-.tool-row{display:flex;justify-content:space-between;align-items:center;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.07)}.tool-row:last-child{border-bottom:none}
-.tool-name{font-family:'JetBrains Mono',monospace;font-size:.8rem;color:var(--white)}.tool-cat{font-size:.7rem;color:rgba(255,255,255,.32)}
-/* PROJECTS */
-.projects-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.project-card{background:var(--white);border:1px solid var(--border);display:flex;flex-direction:column;transition:box-shadow var(--t),transform var(--t)}.project-card:hover{box-shadow:0 10px 40px rgba(0,0,0,.11);transform:translateY(-4px)}
-.project-img{width:100%;height:240px;overflow:hidden;background:var(--gray-100)}.project-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;display:block}.project-card:hover .project-img img{transform:scale(1.05)}
-.project-body{padding:28px 28px 24px;flex:1;display:flex;flex-direction:column}
-.project-num{font-family:'JetBrains Mono',monospace;font-size:.63rem;letter-spacing:.1em;color:var(--gold);margin-bottom:10px}
-.project-title{font-family:'Lora',serif;font-size:1.02rem;color:var(--gray-800);margin-bottom:12px;line-height:1.35}
-.project-desc{font-size:.83rem;color:var(--gray-600);line-height:1.75;flex:1}
-.project-footer{margin-top:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-top:16px;border-top:1px solid var(--border)}
-.project-tags{font-family:'JetBrains Mono',monospace;font-size:.63rem;letter-spacing:.05em;color:var(--navy-mid);max-width:55%}
-.btn-project{font-family:'Inter',sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--navy);border:1.5px solid var(--navy);padding:8px 18px;text-decoration:none;transition:all var(--t);display:inline-block;flex-shrink:0}.btn-project:hover{background:var(--navy);color:var(--white)}
-/* SKILLS */
-.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;background:var(--border);border:1px solid var(--border)}
-.skill-group{background:var(--white);padding:30px}
-.sg-title{font-family:'JetBrains Mono',monospace;font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--border)}
-.skill-item{font-size:.84rem;color:var(--gray-600);padding:7px 0;border-bottom:1px solid var(--gray-100);display:flex;align-items:center;gap:9px;transition:color var(--t)}.skill-item:last-child{border-bottom:none}
-.skill-item::before{content:'';width:5px;height:5px;background:var(--navy);border-radius:50%;flex-shrink:0;transition:background var(--t)}.skill-item:hover{color:var(--navy)}.skill-item:hover::before{background:var(--gold)}
-/* EXPERIENCE */
-.exp-item{padding:48px 0;border-bottom:1px solid var(--border);display:grid;grid-template-columns:220px 1fr;gap:48px;align-items:start}.exp-item:first-child{padding-top:0}.exp-item:last-child{border-bottom:none}
-.exp-date{font-family:'JetBrains Mono',monospace;font-size:.69rem;color:var(--gray-400);letter-spacing:.05em;margin-bottom:6px;line-height:1.6}
-.exp-org{font-size:.8rem;color:var(--navy-mid);font-weight:600}
-.exp-role{font-family:'Lora',serif;font-size:1.25rem;color:var(--gray-800);margin-bottom:6px;line-height:1.2}
-.exp-loc{font-size:.77rem;color:var(--gray-400);margin-bottom:18px}
-.exp-desc{font-size:.88rem;color:var(--gray-600);line-height:1.82;margin-bottom:14px}.exp-desc strong{color:var(--gray-800)}
-.exp-btns{display:flex;gap:10px;margin-top:24px;flex-wrap:wrap}
-.exp-btn{display:inline-flex;align-items:center;gap:6px;font-size:.75rem;font-weight:600;color:var(--navy);border:1.5px solid var(--border);padding:8px 16px;text-decoration:none;transition:all var(--t)}.exp-btn:hover{border-color:var(--navy);background:var(--navy);color:var(--white)}
-/* ACHIEVEMENTS */
-.ach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.ach-card{background:var(--white);border:1px solid var(--border);padding:30px;position:relative;display:flex;flex-direction:column;transition:box-shadow var(--t),transform var(--t)}.ach-card:hover{box-shadow:0 6px 28px rgba(0,0,0,.09);transform:translateY(-2px)}
-.ach-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--navy)}
-.ach-icon{font-size:1.6rem;margin-bottom:14px;display:block}
-.ach-title{font-family:'Lora',serif;font-size:.97rem;color:var(--gray-800);margin-bottom:6px;line-height:1.3}
-.ach-issuer{font-size:.73rem;color:var(--navy-mid);font-weight:500;margin-bottom:10px}
-.ach-desc{font-size:.79rem;color:var(--gray-600);line-height:1.68;flex:1}
-.ach-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:.73rem;font-weight:600;color:var(--navy);border:1.5px solid var(--border);padding:7px 14px;text-decoration:none;transition:all var(--t)}.ach-link:hover{border-color:var(--navy);background:var(--navy);color:var(--white)}
-/* MEMBERSHIPS */
-.member-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;background:var(--border);border:1px solid var(--border)}
-.member-card{background:var(--white);padding:30px;transition:background var(--t)}.member-card:hover{background:var(--gray-50)}
-.member-abbr{font-family:'Lora',serif;font-size:1.65rem;color:var(--navy);margin-bottom:6px;font-weight:600}
-.member-org{font-size:.84rem;color:var(--gray-800);font-weight:500;margin-bottom:4px;line-height:1.35}
-.member-type{font-size:.73rem;color:var(--navy-mid);margin-bottom:4px}
-.member-id{font-family:'JetBrains Mono',monospace;font-size:.67rem;color:var(--gray-400);margin-top:8px}
-/* EXTRA */
-.extra-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.extra-card{background:var(--white);border:1px solid var(--border);padding:28px;display:flex;gap:20px;align-items:flex-start;transition:box-shadow var(--t)}.extra-card:hover{box-shadow:0 4px 20px rgba(0,0,0,.07)}
-.extra-icon{width:42px;height:42px;background:var(--blue-light);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.85rem;font-weight:700;color:var(--navy);font-family:'Lora',serif}
-.extra-role{font-size:.9rem;font-weight:600;color:var(--gray-800);margin-bottom:3px;line-height:1.3}
-.extra-org{font-size:.8rem;color:var(--navy-mid);font-weight:500;margin-bottom:6px}
-.extra-dates{font-family:'JetBrains Mono',monospace;font-size:.67rem;color:var(--gray-400);margin-bottom:10px}
-.extra-cred{display:inline-flex;align-items:center;gap:5px;font-size:.72rem;font-weight:600;color:var(--navy);border:1px solid var(--border);padding:5px 12px;text-decoration:none;transition:all var(--t)}.extra-cred:hover{border-color:var(--navy);background:var(--navy);color:var(--white)}
-/* CONTACT */
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px}
-.contact-text{font-size:.93rem;color:var(--gray-600);line-height:1.85;margin-bottom:30px}
-.cinfo-item{display:flex;gap:14px;align-items:flex-start;margin-bottom:16px}
-.cinfo-label{font-family:'JetBrains Mono',monospace;font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-400);width:68px;flex-shrink:0;padding-top:2px}
-.cinfo-val{font-size:.87rem;color:var(--gray-600)}.cinfo-val a{color:var(--navy-mid);text-decoration:none;transition:color var(--t)}.cinfo-val a:hover{color:var(--navy)}
-.c-links{display:flex;gap:8px;margin-top:26px;flex-wrap:wrap}
-.c-link{font-family:'JetBrains Mono',monospace;font-size:.67rem;letter-spacing:.07em;text-transform:uppercase;color:var(--navy);border:1.5px solid var(--navy);padding:9px 16px;text-decoration:none;transition:all var(--t)}.c-link:hover{background:var(--navy);color:var(--white)}
-.form-field{margin-bottom:14px}
-.form-field label{display:block;font-size:.71rem;font-weight:600;color:var(--gray-600);text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px}
-.form-field input,.form-field textarea{width:100%;padding:11px 14px;border:1.5px solid var(--border);font-family:'Inter',sans-serif;font-size:.87rem;color:var(--gray-800);background:var(--white);outline:none;transition:border-color var(--t);resize:none}
-.form-field input:focus,.form-field textarea:focus{border-color:var(--navy)}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.btn-submit{width:100%;background:var(--navy);color:var(--white);border:none;padding:14px;font-family:'Inter',sans-serif;font-size:.8rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;cursor:pointer;margin-top:6px;transition:background var(--t)}.btn-submit:hover{background:var(--navy-mid)}
-footer{background:var(--navy-dark);padding:28px 48px;display:flex;justify-content:space-between;align-items:center}
-footer p{font-family:'JetBrains Mono',monospace;font-size:.63rem;color:rgba(255,255,255,.22);letter-spacing:.06em}
-@media(max-width:900px){
-  nav{padding:0 20px}
-  .nav-links{display:none;flex-direction:column;position:absolute;top:var(--nav-h);left:0;right:0;background:var(--navy-dark);padding:12px 20px;gap:2px;border-top:1px solid rgba(255,255,255,.08)}.nav-links.open{display:flex}
-  .hamburger{display:flex}.nav-cta{display:none}
-  .hero-grid,.research-grid,.contact-grid{grid-template-columns:1fr}
-  .tl-item{grid-template-columns:1fr}.tl-left{padding:16px 20px}
-  .skills-grid,.member-grid,.extra-grid,.ach-grid{grid-template-columns:1fr 1fr}
-  .projects-grid{grid-template-columns:1fr}
-  .exp-item{grid-template-columns:1fr;gap:10px}
-  .hero-left{min-height:55vh;padding:44px 28px}.hero-right{padding:40px 28px}
-  .container{padding:0 22px}.page-header{padding:44px 0 36px}.section-body{padding:40px 0}
-}
-@media(max-width:600px){.skills-grid,.member-grid,.extra-grid,.ach-grid{grid-template-columns:1fr}}
+    :root {
+      --navy: #0d2238;
+      --navy-2: #173751;
+      --ink: #18212b;
+      --muted: #5d6875;
+      --paper: #f7f5f0;
+      --white: #ffffff;
+      --line: #d9d8d3;
+      --accent: #a8572a;
+      --accent-soft: #f1e5dc;
+      --blue-soft: #e9eff4;
+      --green-soft: #e9eee9;
+      --shadow: 0 18px 50px rgba(13, 34, 56, .09);
+      --radius: 18px;
+      --container: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.68;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .skip-link {
+      position: fixed; left: 16px; top: -60px; z-index: 2000;
+      background: var(--white); color: var(--navy); padding: 10px 14px; border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    .skip-link:focus { top: 16px; }
+
+    .site-header {
+      position: sticky; top: 0; z-index: 1000;
+      background: rgba(13,34,56,.98);
+      border-bottom: 3px solid var(--accent);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 8px 28px rgba(5,18,31,.12);
+    }
+    .nav-wrap {
+      max-width: var(--container); margin: 0 auto; min-height: 76px; padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between; gap: 24px;
+    }
+    .brand {
+      display: inline-flex; align-items: center; gap: 12px; text-decoration: none;
+      font-weight: 750; letter-spacing: -.02em; color: #fff;
+    }
+    .brand-mark {
+      width: 38px; height: 38px; border-radius: 11px; display: grid; place-items: center;
+      background: #fff; color: var(--navy); font: 700 17px Georgia, serif;
+      border: 1px solid rgba(255,255,255,.4);
+    }
+    .brand span:last-child { font-size: 15px; color: #fff; }
+    .nav-links { display: flex; align-items: center; gap: 5px; flex-wrap: wrap; justify-content: flex-end; }
+    .nav-links a {
+      text-decoration: none; font-size: 13px; font-weight: 680; color: #dbe4eb; padding: 9px 10px;
+      border-radius: 8px; transition: background .18s ease, color .18s ease;
+    }
+    .nav-links a:hover { background: rgba(255,255,255,.10); color: #fff; }
+    .nav-links a.active { background: #fff; color: var(--navy); }
+    .nav-links a:focus-visible { outline: 2px solid #e8a47e; outline-offset: 2px; }
+    .nav-toggle {
+      display: none; border: 1px solid rgba(255,255,255,.35); background: #fff; color: var(--navy);
+      border-radius: 9px; padding: 8px 10px; font: inherit; cursor: pointer;
+    }
+
+    .container { width: min(calc(100% - 48px), var(--container)); margin: 0 auto; }
+    section { padding: 92px 0; }
+    section.alt { background: #fff; }
+    .eyebrow {
+      margin: 0 0 12px; font-size: 12px; font-weight: 800; text-transform: uppercase;
+      letter-spacing: .16em; color: var(--accent);
+    }
+    .section-head { max-width: 760px; margin-bottom: 40px; }
+    .section-head h2 {
+      margin: 0; font: 600 clamp(34px, 4vw, 54px)/1.08 Georgia, "Times New Roman", serif;
+      color: var(--navy); letter-spacing: -.025em;
+    }
+    .section-head p { margin: 14px 0 0; color: var(--muted); font-size: 17px; }
+    .rule { width: 56px; height: 2px; background: var(--accent); margin-top: 20px; }
+
+    .hero {
+      min-height: calc(100vh - 76px); display: flex; align-items: center; padding: 64px 0 80px;
+      background:
+        radial-gradient(circle at 88% 12%, rgba(168,87,42,.08), transparent 24%),
+        linear-gradient(180deg, #fbfaf7 0%, var(--paper) 100%);
+    }
+    .hero-grid {
+      display: grid; grid-template-columns: minmax(0, 1.18fr) minmax(320px, .82fr);
+      gap: clamp(48px, 7vw, 92px); align-items: center;
+    }
+    .hero-kicker { color: var(--accent); font-size: 13px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .hero h1 {
+      margin: 10px 0 14px; font: 600 clamp(58px, 8vw, 104px)/.94 Georgia, "Times New Roman", serif;
+      color: var(--navy); letter-spacing: -.05em;
+    }
+    .hero-tagline {
+      margin: 0 0 26px; max-width: 780px; font-size: clamp(18px, 2vw, 23px); color: #41505d;
+      line-height: 1.45;
+    }
+    .hero-bio { max-width: 760px; color: #3b4651; font-size: 16.5px; }
+    .hero-bio p { margin: 0 0 14px; }
+    .hero-bio strong { color: var(--navy); font-weight: 760; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 30px 0 24px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      min-height: 44px; padding: 0 17px; border-radius: 10px; text-decoration: none;
+      font-size: 14px; font-weight: 750; border: 1px solid transparent; transition: .2s ease;
+    }
+    .btn-primary { background: var(--navy); color: #fff; }
+    .btn-primary:hover { background: #153654; transform: translateY(-1px); }
+    .btn-secondary { background: transparent; color: var(--navy); border-color: #aeb7bf; }
+    .btn-secondary:hover { background: #fff; border-color: var(--navy); }
+    .social-row { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 16px; }
+    .social-row a { font-size: 13px; font-weight: 700; color: #4b5864; text-decoration: none; border-bottom: 1px solid transparent; }
+    .social-row a:hover { color: var(--accent); border-color: currentColor; }
+
+    .portrait-wrap {
+      position: relative; max-width: 430px; margin-left: auto; padding: 18px 18px 0 0;
+    }
+    .portrait-card {
+      position: relative; border-radius: 26px; overflow: hidden; aspect-ratio: 4 / 5;
+      background: var(--navy); box-shadow: var(--shadow);
+      border: 1px solid rgba(13,34,56,.12);
+    }
+    .portrait-card::before {
+      content: "AA"; position: absolute; inset: 0; display: grid; place-items: center;
+      font: 600 84px Georgia, serif; color: rgba(255,255,255,.18);
+    }
+    .portrait-card img { width: 100%; height: 100%; object-fit: cover; position: relative; z-index: 1; }
+    .portrait-note {
+      position: absolute; left: -34px; bottom: 36px; z-index: 2;
+      background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow);
+      padding: 14px 18px; border-radius: 13px; font-size: 13px; line-height: 1.35;
+    }
+    .portrait-note strong { display: block; color: var(--navy); font-size: 14px; }
+    .portrait-accent {
+      position: absolute; width: 130px; height: 130px; border: 2px solid var(--accent);
+      border-radius: 24px; right: 0; top: 0; transform: translate(14px,-14px); z-index: -1;
+    }
+
+    .education-grid { display: grid; gap: 18px; }
+    .edu-card {
+      display: grid; grid-template-columns: 220px 1fr; gap: 30px; padding: 30px 0;
+      border-top: 1px solid var(--line);
+    }
+    .edu-card:last-child { border-bottom: 1px solid var(--line); }
+    .edu-date { color: var(--muted); font-size: 14px; font-weight: 700; }
+    .edu-main h3 { margin: 0 0 5px; font-size: 24px; line-height: 1.25; color: var(--navy); }
+    .edu-main .institution { margin: 0 0 10px; color: #465360; font-weight: 650; }
+    .edu-result { display: inline-block; margin: 6px 0 13px; padding: 6px 10px; border-radius: 8px; background: var(--blue-soft); color: var(--navy); font-weight: 750; font-size: 13px; }
+    .edu-main p { margin: 8px 0 0; color: #4e5965; }
+    .course-label { color: var(--navy); font-weight: 760; }
+
+    .research-layout { display: grid; grid-template-columns: 1.12fr .88fr; gap: 54px; align-items: start; }
+    .research-copy p { margin: 0 0 18px; color: #3e4954; font-size: 17px; }
+    .research-copy strong { color: var(--navy); }
+    .research-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+    .research-chip {
+      padding: 8px 11px; border-radius: 999px; background: #fff; border: 1px solid #d7d9d8;
+      color: #42505b; font-size: 13px;
+    }
+    .subhead { margin: 56px 0 22px; font-size: 13px; text-transform: uppercase; letter-spacing: .15em; color: var(--accent); font-weight: 800; }
+    .publication-list { display: grid; gap: 18px; }
+    .publication {
+      background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 25px 26px; box-shadow: 0 9px 28px rgba(13,34,56,.04);
+    }
+    .publication h3 { margin: 0 0 8px; color: var(--navy); font: 600 22px/1.3 Georgia, serif; }
+    .publication p { margin: 6px 0; color: #4a5661; font-size: 14.5px; }
+    .status-line { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .status {
+      padding: 6px 9px; border-radius: 7px; background: var(--accent-soft);
+      color: #7b3e1f; font-size: 12px; font-weight: 800;
+    }
+    .service-card {
+      margin-top: 18px; padding: 22px 24px; border-left: 3px solid var(--accent);
+      background: #fff; border-radius: 0 14px 14px 0; box-shadow: 0 8px 24px rgba(13,34,56,.04);
+    }
+    .service-card h3 { margin: 0 0 5px; color: var(--navy); font-size: 18px; }
+    .service-card p { margin: 0; color: var(--muted); }
+
+    .filter-bar { display: flex; gap: 8px; flex-wrap: wrap; margin: -10px 0 28px; }
+    .filter-btn {
+      appearance: none; border: 1px solid #cfd3d3; background: transparent; color: #4b5864;
+      border-radius: 999px; padding: 8px 13px; font: 700 12.5px/1 inherit; cursor: pointer; transition: .2s ease;
+    }
+    .filter-btn:hover, .filter-btn.active { background: var(--navy); color: #fff; border-color: var(--navy); }
+    .projects-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 22px; }
+    .project-card {
+      background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
+      box-shadow: 0 12px 35px rgba(13,34,56,.05); transition: transform .24s ease, box-shadow .24s ease;
+      display: flex; flex-direction: column;
+    }
+    .project-card:hover { transform: translateY(-4px); box-shadow: 0 20px 44px rgba(13,34,56,.10); }
+    .project-card.hidden { display: none; }
+    .project-media {
+      min-height: 230px; aspect-ratio: 16/9; background: linear-gradient(145deg, #173751, #0d2238);
+      position: relative; overflow: hidden;
+    }
+    .project-media img { width: 100%; height: 100%; object-fit: cover; }
+    .project-media::after {
+      content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 42%, rgba(13,34,56,.55));
+      pointer-events: none;
+    }
+    .project-media.media-fallback::after { background: none; }
+    .project-number {
+      position: absolute; left: 20px; bottom: 14px; z-index: 2; color: #fff;
+      font: 600 38px Georgia, serif; letter-spacing: -.03em;
+    }
+    .fallback-label {
+      position: absolute; right: 20px; top: 18px; color: rgba(255,255,255,.70); font-size: 12px;
+      font-weight: 800; text-transform: uppercase; letter-spacing: .14em;
+    }
+    .project-content { padding: 24px 24px 25px; display: flex; flex-direction: column; flex: 1; }
+    .project-meta { display: flex; justify-content: space-between; gap: 12px; color: var(--muted); font-size: 12px; font-weight: 750; margin-bottom: 12px; }
+    .featured-badge { color: var(--accent); }
+    .project-content h3 { margin: 0 0 13px; color: var(--navy); font-size: 21px; line-height: 1.28; letter-spacing: -.01em; }
+    .project-content p { margin: 0; color: #4e5964; font-size: 14.7px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 19px 0; }
+    .tag { background: #f1f2f2; color: #4a5661; padding: 5px 8px; border-radius: 6px; font-size: 11.5px; font-weight: 700; }
+    .text-link {
+      margin-top: auto; padding-top: 4px; width: fit-content; color: var(--navy); text-decoration: none;
+      font-size: 13.5px; font-weight: 800; border-bottom: 1px solid rgba(13,34,56,.28);
+    }
+    .text-link:hover { color: var(--accent); border-color: currentColor; }
+
+    .skills-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; }
+    .skill-card { padding: 25px; background: #fff; border: 1px solid var(--line); border-radius: 15px; }
+    .skill-card h3 { margin: 0 0 15px; color: var(--navy); font-size: 17px; }
+    .skill-list { display: flex; flex-wrap: wrap; gap: 8px; }
+    .skill-list span { padding: 7px 10px; border-radius: 8px; background: var(--paper); color: #43515d; font-size: 13px; font-weight: 650; }
+
+    .experience-grid { display: grid; gap: 22px; }
+    .experience-card {
+      display: grid; grid-template-columns: 230px 1fr; gap: 34px; padding: 30px;
+      background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+    }
+    .exp-side p { margin: 0 0 5px; color: var(--muted); font-size: 13px; font-weight: 700; }
+    .exp-side strong { display: block; color: var(--navy); font-size: 16px; }
+    .exp-main h3 { margin: 0 0 5px; color: var(--navy); font-size: 24px; }
+    .exp-org { margin: 0 0 15px; color: #4f5b66; font-weight: 700; }
+    .exp-main p { margin: 0 0 12px; color: #4c5762; }
+    .exp-links { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 18px; }
+    .small-link {
+      display: inline-flex; align-items: center; gap: 5px; text-decoration: none; font-size: 12.5px;
+      font-weight: 800; color: var(--navy); border: 1px solid #cbd0d2; border-radius: 8px; padding: 7px 10px;
+      background: #fff;
+    }
+    .small-link:hover { border-color: var(--navy); }
+
+    .achievement-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; }
+    .achievement-card { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 24px; }
+    .achievement-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
+    .achievement-mark { color: var(--accent); }
+    .achievement-date { color: var(--muted); font-size: 12px; font-weight: 750; }
+    .achievement-card h3 { margin: 0 0 7px; color: var(--navy); font-size: 20px; }
+    .achievement-meta { color: #55616b !important; font-size: 13px !important; font-weight: 700; }
+    .achievement-card p { color: #4d5863; font-size: 14.2px; }
+
+    .membership-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; }
+    .membership-card { background: #fff; border: 1px solid var(--line); border-radius: 15px; padding: 22px; }
+    .membership-card h3 { margin: 0 0 8px; color: var(--navy); font-size: 17px; line-height: 1.35; }
+    .membership-card > p { margin: 0 0 18px; color: var(--muted); font-size: 13.5px; }
+    .membership-foot { display: flex; flex-direction: column; gap: 4px; padding-top: 12px; border-top: 1px solid #e3e3df; color: #63707b; font-size: 11.5px; }
+
+    .leadership-list { border-top: 1px solid var(--line); }
+    .leadership-row {
+      display: grid; grid-template-columns: 210px 1fr auto; gap: 24px; align-items: center;
+      padding: 22px 0; border-bottom: 1px solid var(--line);
+    }
+    .leadership-date { color: var(--muted); font-size: 12.5px; font-weight: 700; }
+    .leadership-main h3 { margin: 0 0 3px; color: var(--navy); font-size: 18px; }
+    .leadership-main p { margin: 0; color: #56626d; font-size: 14px; }
+
+    .contact-panel {
+      background: var(--navy); color: #fff; border-radius: 24px; padding: clamp(32px,6vw,62px);
+      display: grid; grid-template-columns: 1.1fr .9fr; gap: 50px; align-items: center; box-shadow: var(--shadow);
+    }
+    .contact-panel h2 { margin: 0 0 16px; font: 600 clamp(36px,5vw,62px)/1.06 Georgia, serif; letter-spacing: -.03em; }
+    .contact-panel p { margin: 0; color: #d8e0e7; max-width: 690px; font-size: 16.5px; }
+    .contact-list { display: grid; gap: 10px; }
+    .contact-list a {
+      display: flex; justify-content: space-between; gap: 14px; align-items: center; color: #fff;
+      text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.20); padding: 10px 0;
+      font-size: 14px; font-weight: 700;
+    }
+    .contact-list a:hover { color: #f0c5ab; }
+
+    footer { border-top: 1px solid var(--line); padding: 28px 0 38px; color: #6d7680; font-size: 12.5px; }
+    .footer-row { display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
+
+    .reveal { opacity: 1; transform: none; }
+    .js .reveal { opacity: 0; transform: translateY(14px); transition: opacity .5s ease, transform .5s ease; }
+    .js .reveal.visible { opacity: 1; transform: none; }
+
+    :focus-visible { outline: 3px solid rgba(168,87,42,.45); outline-offset: 3px; }
+
+    @media (max-width: 980px) {
+      .nav-toggle { display: inline-flex; }
+      .nav-links {
+        display: none; position: absolute; left: 20px; right: 20px; top: 67px;
+        background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 10px;
+        box-shadow: var(--shadow);
+      }
+      .nav-links.open { display: grid; grid-template-columns: repeat(2,1fr); }
+      .nav-links a { padding: 10px 12px; }
+      .hero-grid, .research-layout, .contact-panel { grid-template-columns: 1fr; }
+      .hero { min-height: auto; }
+      .portrait-wrap { margin: 15px auto 0; width: min(100%, 430px); }
+      .projects-grid { grid-template-columns: 1fr; }
+      .experience-card { grid-template-columns: 1fr; gap: 14px; }
+      .membership-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+      .leadership-row { grid-template-columns: 170px 1fr; }
+      .leadership-row .small-link { grid-column: 2; width: fit-content; }
+    }
+    @media (max-width: 680px) {
+      .container { width: min(calc(100% - 30px), var(--container)); }
+      section { padding: 72px 0; }
+      .nav-wrap { padding: 0 15px; }
+      .brand span:last-child { display: none; }
+      .hero h1 { font-size: clamp(50px, 18vw, 74px); }
+      .hero-tagline { font-size: 17px; }
+      .portrait-note { left: 12px; right: 12px; bottom: 12px; }
+      .edu-card { grid-template-columns: 1fr; gap: 8px; padding: 24px 0; }
+      .skills-grid, .achievement-grid, .membership-grid { grid-template-columns: 1fr; }
+      .project-content { padding: 21px; }
+      .project-media { min-height: 190px; }
+      .leadership-row { grid-template-columns: 1fr; gap: 8px; }
+      .leadership-row .small-link { grid-column: 1; }
+      .contact-panel { padding: 30px 24px; }
+      .nav-links.open { grid-template-columns: 1fr; max-height: calc(100vh - 90px); overflow: auto; background: var(--navy); border-color: rgba(255,255,255,.15); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+      .js .reveal { opacity: 1; transform: none; }
+    }
+    /* Single-page view routing: only one portfolio section is shown at a time. */
+    .page-view {
+      display: none;
+      min-height: calc(100vh - 76px);
+    }
+    .page-view.active {
+      display: block;
+      animation: pageIn .34s ease both;
+    }
+    .hero.page-view.active { display: flex; }
+    @keyframes pageIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media print {
+      .site-header, .filter-bar, .hero-actions, .social-row, .text-link, .small-link { display: none !important; }
+      body { background: #fff; }
+      section { padding: 36px 0; }
+      .reveal { opacity: 1; transform: none; }
+      .project-card, .publication, .skill-card, .achievement-card, .membership-card, .experience-card { break-inside: avoid; box-shadow: none; }
+    }
+  
+
+    /* Refined visual system */
+    body { font-size: 16.5px; line-height: 1.7; }
+    .nav-links a { font-size: 13.5px; font-weight: 650; }
+    .section-head { max-width: 820px; margin-bottom: 46px; }
+    .section-head h2 { font-size: clamp(36px, 4.2vw, 52px); font-weight: 600; }
+    .section-head > p:not(.eyebrow) { font-size: 17px; line-height: 1.55; }
+    .eyebrow { font-size: 12.5px; letter-spacing: .13em; }
+
+    /* Section pages use the dark navigation and footer as the contrast anchors.
+       The content area itself stays light and readable. */
+    .page-view:not(.hero) {
+      --page-surface: var(--paper);
+      background: var(--page-surface);
+      padding-top: 70px;
+      padding-bottom: 96px;
+    }
+    .page-view.alt:not(.hero) { --page-surface: #fff; }
+    .page-view:not(.hero) .section-head {
+      position: relative;
+      padding: 0 0 26px 20px;
+      margin-bottom: 44px;
+      border-bottom: 1px solid rgba(13,34,56,.14);
+    }
+    .page-view:not(.hero) .section-head::before {
+      content: "";
+      position: absolute;
+      left: 0; top: 4px; bottom: 27px;
+      width: 4px;
+      border-radius: 4px;
+      background: var(--accent);
+    }
+    .page-view:not(.hero) .section-head h2 { color: var(--navy); }
+    .page-view:not(.hero) .section-head .eyebrow { color: var(--accent); }
+    .page-view:not(.hero) .section-head > p:not(.eyebrow) { color: var(--muted); }
+    .page-view:not(.hero) .section-head .rule { display: none; }
+
+    /* Human-scale content typography */
+    .research-copy p { font-size: 17px; line-height: 1.72; }
+    .project-content h3 { font-size: 22px; line-height: 1.3; font-weight: 740; }
+    .project-content p { font-size: 15.5px; line-height: 1.72; }
+    .project-content p strong { color: var(--navy); font-weight: 780; }
+    .exp-main h3 { font-size: 25px; }
+    .exp-main p { font-size: 15.5px; }
+    .achievement-card h3 { font-size: 21px; line-height: 1.35; }
+    .achievement-card p { font-size: 15px; line-height: 1.65; }
+    .membership-card h3 { font-size: 18px; }
+    .membership-card > p { font-size: 14.5px; }
+    .leadership-main h3 { font-size: 19px; }
+    .leadership-main p { font-size: 14.5px; }
+    .edu-main h3 { font-size: 25px; }
+    .edu-main p { font-size: 15.5px; }
+
+    /* Clear subsection headings within longer pages */
+    .subhead, .group-title {
+      margin: 54px 0 22px;
+      color: var(--navy);
+      font: 700 23px/1.25 Georgia, "Times New Roman", serif;
+      letter-spacing: -.015em;
+      text-transform: none;
+    }
+    .first-group-title { margin-top: 8px; }
+
+    /* Skills are now six balanced branches. */
+    .skills-grid { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 18px; }
+    .skill-card { padding: 27px; min-height: 150px; box-shadow: 0 8px 24px rgba(13,34,56,.035); }
+    .skill-card h3 { font-size: 18px; margin-bottom: 17px; }
+    .skill-list span { font-size: 13.5px; padding: 8px 10px; }
+
+    /* Project media never fails as an empty block. */
+    .project-media.media-fallback {
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.05), rgba(255,255,255,0)),
+        linear-gradient(145deg, #173751, #0d2238);
+    }
+    .project-media.media-fallback::before {
+      content: "";
+      position: absolute; inset: 18px;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 12px;
+    }
+    .media-folder-note {
+      position: absolute; right: 20px; top: 18px; z-index: 2;
+      color: rgba(255,255,255,.78); font-size: 12.5px; font-weight: 750;
+      letter-spacing: .04em;
+    }
+    .project-actions { display: flex; flex-wrap: wrap; gap: 9px; margin-top: auto; padding-top: 4px; }
+    .project-button {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 40px; padding: 0 14px; border-radius: 9px;
+      text-decoration: none; font-size: 13px; font-weight: 780;
+      transition: transform .18s ease, background .18s ease, border-color .18s ease;
+    }
+    .project-button:hover { transform: translateY(-1px); }
+    .project-button-primary { background: var(--navy); color: #fff; border: 1px solid var(--navy); }
+    .project-button-primary:hover { background: var(--navy-2); }
+    .project-button-secondary { background: #fff; color: var(--navy); border: 1px solid #bcc5cc; }
+    .project-button-secondary:hover { border-color: var(--navy); }
+
+    /* Combined recognition page */
+    #recognition .membership-grid { margin-top: 4px; }
+    #recognition .leadership-list { margin-top: 4px; }
+    #recognition .achievement-top { justify-content: flex-end; }
+
+    /* Footer is intentionally simple and consistent on every view. */
+    footer {
+      background: #091b2d;
+      border-top: 3px solid var(--accent);
+      color: #e2e8ee;
+      padding: 22px 0;
+      font-size: 13.5px;
+    }
+    .footer-row { align-items: center; }
+    .footer-row a { color: #e2e8ee; text-decoration: none; font-weight: 650; }
+    .footer-row a:hover { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+
+    @media (max-width: 980px) {
+      .skills-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    }
+    @media (max-width: 680px) {
+      body { font-size: 16px; }
+      .page-view:not(.hero) { padding-top: 54px; padding-bottom: 78px; }
+      .section-head { margin-bottom: 40px; }
+      .section-head h2 { font-size: clamp(33px, 10vw, 43px); }
+      .skills-grid { grid-template-columns: 1fr; }
+      .project-content h3 { font-size: 20px; }
+      .project-content p { font-size: 15px; }
+      .footer-row { flex-wrap: nowrap; font-size: 12.5px; }
+    }
+
+    /* Private browser editing mode. Activate with ?edit=1 or Ctrl+Shift+E. */
+    .editor-toolbar {
+      position: fixed; left: 50%; bottom: 18px; transform: translateX(-50%);
+      z-index: 3000; display: none; align-items: center; gap: 8px; flex-wrap: wrap;
+      max-width: min(92vw, 860px); padding: 10px;
+      background: rgba(9,27,45,.97); color: #fff;
+      border: 1px solid rgba(255,255,255,.16); border-radius: 12px;
+      box-shadow: 0 16px 44px rgba(0,0,0,.24);
+      font-size: 13px;
+    }
+    .editor-toolbar.visible { display: flex; }
+    .editor-toolbar strong { margin: 0 4px 0 2px; font-size: 13px; }
+    .editor-btn {
+      appearance: none; border: 1px solid rgba(255,255,255,.25); border-radius: 8px;
+      background: rgba(255,255,255,.08); color: #fff; padding: 8px 11px;
+      font: 700 12px/1 inherit; cursor: pointer;
+    }
+    .editor-btn:hover { background: rgba(255,255,255,.15); }
+    .editor-btn.primary { background: #fff; color: var(--navy); border-color: #fff; }
+    .editor-status { color: #c8d5df; margin-left: 2px; }
+    body.editing-mode [contenteditable="true"] {
+      outline: 1px dashed rgba(168,87,42,.65);
+      outline-offset: 3px;
+      border-radius: 3px;
+      cursor: text;
+    }
+    body.editing-mode [contenteditable="true"]:focus {
+      outline: 2px solid var(--accent);
+      background: rgba(241,229,220,.28);
+    }
+    @media (max-width: 680px) {
+      .editor-toolbar { left: 12px; right: 12px; transform: none; justify-content: center; }
+    }
+
+
+
+    /* Final media presentation: direct project, experience, recognition, and leadership images. */
+    .project-media { background: #e9edf0; }
+    .project-media img { object-position: center; transition: transform .35s ease; }
+    .project-card:hover .project-media img { transform: scale(1.018); }
+    .project-media-open { position: absolute; inset: 0; z-index: 1; }
+    .project-media .project-number { z-index: 3; pointer-events: none; }
+
+    .experience-card { overflow: hidden; }
+    .experience-gallery {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 14px;
+      padding-top: 5px;
+    }
+    .single-photo-gallery { grid-template-columns: minmax(0, 1fr); }
+    .exp-photo-card {
+      margin: 0;
+      background: #f4f3ef;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      overflow: hidden;
+    }
+    .exp-photo-link {
+      display: block;
+      height: 220px;
+      background: #eef1f3;
+      overflow: hidden;
+    }
+    .exp-photo-card img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      transition: transform .25s ease;
+    }
+    .exp-photo-card.fit-cover img { object-fit: cover; }
+    .exp-photo-card.fit-contain img { object-fit: contain; padding: 8px; background: #fff; }
+    .exp-photo-card:hover img { transform: scale(1.015); }
+    .exp-photo-card figcaption {
+      padding: 10px 12px;
+      color: #56616b;
+      font-size: 12px;
+      font-weight: 720;
+      background: #fff;
+      border-top: 1px solid #e5e4df;
+    }
+    .exp-photo-wide .exp-photo-link { height: min(420px, 48vw); min-height: 250px; }
+
+    .achievement-card {
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .achievement-media {
+      height: 235px;
+      background: #f2f1ed;
+      border-bottom: 1px solid var(--line);
+      overflow: hidden;
+    }
+    .achievement-media-link { display: block; width: 100%; height: 100%; }
+    .achievement-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 10px;
+      background: #fff;
+      transition: transform .25s ease;
+    }
+    .achievement-media:hover img { transform: scale(1.012); }
+    .achievement-card > :not(.achievement-media) { margin-left: 24px; margin-right: 24px; }
+    .achievement-card .achievement-top { margin-top: 20px; }
+    .achievement-card > p:last-child { margin-bottom: 24px; }
+
+    .leadership-row {
+      grid-template-columns: 190px minmax(0,1fr) 180px;
+      gap: 24px;
+      align-items: center;
+    }
+    .leadership-media {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 7px;
+      min-width: 0;
+    }
+    .leadership-media-link {
+      display: block;
+      height: 104px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .leadership-media-link:only-child { grid-column: 1 / -1; }
+    .leadership-media img {
+      width: 100%; height: 100%; object-fit: contain; padding: 4px; background: #fff;
+      transition: transform .2s ease;
+    }
+    .leadership-media-link:hover img { transform: scale(1.02); }
+
+    /* If a Drive image cannot be served, keep the card polished instead of showing a broken icon. */
+    img.drive-image-unavailable { display: none !important; }
+    .project-media.drive-media-unavailable {
+      background: linear-gradient(145deg, #173751, #0d2238);
+    }
+    .project-media.drive-media-unavailable::before {
+      content: "Preview unavailable";
+      position: absolute;
+      right: 18px;
+      top: 18px;
+      color: rgba(255,255,255,.72);
+      font-size: 12px;
+      font-weight: 750;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+    .exp-photo-card.drive-media-unavailable .exp-photo-link,
+    .achievement-media.drive-media-unavailable,
+    .leadership-media-link.drive-media-unavailable {
+      background: #eef1f3;
+    }
+
+    @media (max-width: 980px) {
+      .experience-gallery { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .industrial-gallery .exp-photo-card:first-child { grid-column: 1 / -1; }
+      .leadership-row { grid-template-columns: 160px minmax(0,1fr); }
+      .leadership-media { grid-column: 2; width: min(100%, 360px); }
+    }
+
+    @media (max-width: 680px) {
+      .experience-gallery { grid-template-columns: 1fr; }
+      .industrial-gallery .exp-photo-card:first-child { grid-column: auto; }
+      .exp-photo-link { height: 235px; }
+      .exp-photo-wide .exp-photo-link { height: 300px; min-height: 0; }
+      .achievement-media { height: 220px; }
+      .leadership-row { grid-template-columns: 1fr; }
+      .leadership-media { grid-column: 1; width: 100%; }
+      .leadership-media-link { height: 155px; }
+    }
+
+    /* Preserve the full content of technical screenshots and credentials. */
+    .project-media img { object-fit: contain; background: #f3f5f6; padding: 6px; }
+    .achievement-media { height: 260px; }
+    .exp-photo-link { height: 240px; }
+    .leadership-media-link { height: 118px; }
+    @media (max-width: 680px) {
+      .achievement-media { height: 245px; }
+      .exp-photo-link { height: 250px; }
+      .leadership-media-link { height: 165px; }
+    }
+
+    /* Keep the single AutoCAD instructor preview at the same visual scale as the DOHWA gallery thumbnails. */
+    .single-photo-gallery { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    .single-photo-gallery .exp-photo-card { grid-column: 2; }
+    .single-photo-gallery .exp-photo-wide .exp-photo-link { height: 240px; min-height: 0; }
+    @media (max-width: 980px) {
+      .single-photo-gallery { grid-template-columns: 1fr; }
+      .single-photo-gallery .exp-photo-card { grid-column: 1; width: min(100%, 360px); justify-self: center; }
+    }
+    @media (max-width: 680px) {
+      .single-photo-gallery .exp-photo-card { width: 100%; }
+      .single-photo-gallery .exp-photo-wide .exp-photo-link { height: 250px; }
+    }
+
 </style>
 </head>
 <body>
-<nav>
-  <a class="nav-logo" onclick="showPage('home')">Abir <span>Ahmad</span></a>
-  <ul class="nav-links" id="navLinks">
-    <li><a onclick="showPage('home')" id="nav-home" class="active">Home</a></li>
-    <li><a onclick="showPage('education')" id="nav-education">Education</a></li>
-    <li><a onclick="showPage('research')" id="nav-research">Research</a></li>
-    <li><a onclick="showPage('projects')" id="nav-projects">Projects</a></li>
-    <li><a onclick="showPage('skills')" id="nav-skills">Skills</a></li>
-    <li><a onclick="showPage('experience')" id="nav-experience">Experience</a></li>
-    <li><a onclick="showPage('achievements')" id="nav-achievements">Achievements</a></li>
-    <li><a onclick="showPage('memberships')" id="nav-memberships">Memberships</a></li>
-    <li><a onclick="showPage('extracurricular')" id="nav-extracurricular">Activities</a></li>
-    <li><a onclick="showPage('contact')" id="nav-contact">Contact</a></li>
-  </ul>
-  <a class="nav-cta" onclick="showPage('contact')">Get in Touch</a>
-  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<nav aria-label="Primary navigation" class="nav-wrap">
+<a aria-label="Abir Ahmad home" class="brand" href="#about">
+<span class="brand-mark">AA</span><span>Abir Ahmad</span>
+</a>
+<button aria-controls="navLinks" aria-expanded="false" class="nav-toggle" type="button">Menu</button>
+<div class="nav-links" id="navLinks">
+<a class="active" href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#research">Research</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#recognition">Recognition &amp; Engagement</a>
+<a href="#contact">Contact</a>
+</div>
 </nav>
-
-<!-- HOME -->
-<div class="page active" id="page-home">
-  <div class="hero-grid">
-    <div class="hero-left">
-      <div class="hero-inner">
-        <div class="hero-photo-wrap">
-          <img src="https://drive.google.com/thumbnail?id=1lnwYrzJ71fLHumxbfd0047LH1ajIX-ZB&sz=w600" alt="Abir Ahmad" onerror="this.parentElement.outerHTML='<div class=hero-photo-ph><span>Photo loading...</span></div>'">
-        </div>
-        <h1 class="hero-name">Abir<br><em>Ahmad</em></h1>
-        <p class="hero-role">Aspiring Transportation Engineering Researcher<br>Road Safety · ITS · Computer Vision</p>
-        <div class="hero-social">
-          <a href="mailto:abirahmad.ce@gmail.com">Email</a>
-          <a href="https://www.linkedin.com/in/abirahmad-eng/" target="_blank">LinkedIn</a>
-          <a href="https://github.com/abirahmad-eng" target="_blank">GitHub</a>
-          <a href="https://orcid.org/0009-0004-3782-5302" target="_blank">ORCID</a>
-        </div>
-      </div>
-    </div>
-    <div class="hero-right">
-      <p class="hero-tag"> About Me</p>
-      <p class="hero-bio">Hi, I'm Abir Ahmad. I'm a final-year Civil Engineering student at the Islamic University of Technology (IUT), a subsidiary organ of the Organization of Islamic Cooperation (OIC). I grew up in Pabna, completed my secondary education at Bansherbada High School, and went on to Notre Dame College in Dhaka before finding my way to IUT. Outside the academic world, I've been involved in scouting, campus leadership, nonprofit work, and teaching, experiences that have shaped how I think and work just as much as any course or project. I have a growing interest in transportation engineering and road safety, and I'm always open to connecting with people who share similar interests or are simply doing interesting work in the field.</p>
-      <a class="btn btn-primary" onclick="showPage('research')">View Research</a>
-      <a class="btn btn-outline" onclick="showPage('contact')">Connect</a>
-    </div>
-  </div>
-  <footer><p>© Abir Ahmad </p><p>abirahmad-eng.github.io</p></footer>
+</header>
+<main id="main">
+<section aria-hidden="false" class="hero page-view active" id="about">
+<div class="container hero-grid">
+<div>
+<h1>Abir Ahmad</h1>
+<p class="hero-tagline">Aspiring Transportation Engineering Researcher | Traffic Safety | ITS | Computer Vision</p>
+<div class="hero-bio">
+<p><strong>Hi, I'm Abir Ahmad.</strong> I'm a Civil Engineering graduate from the Islamic University of Technology (IUT), Bangladesh, a subsidiary organ of the Organization of Islamic Cooperation (OIC).</p>
+<p>I grew up in Pabna, a northern district of Bangladesh, completed my secondary education at Bansherbada High School, and later studied at Notre Dame College in Dhaka for my higher secondary studies before joining IUT. Over the years, my academic journey gradually shaped my interest in transportation engineering, particularly traffic safety and the broader challenges of urban mobility.</p>
+<p>Outside academics, I have been involved in scouting, student organizations, campus leadership, and teaching. These experiences have played an important role in shaping how I communicate, work with others, take responsibility, and approach problems.</p>
+<p>I enjoy learning new things, exploring ideas, and working on meaningful engineering problems. I am always happy to connect with people who share similar interests or are doing thoughtful and interesting work.</p>
 </div>
-
-<!-- EDUCATION -->
-<div class="page" id="page-education">
-  <div class="page-header"><div class="container ph-inner"><p class="breadcrumb">// 01 — Education</p><h1 class="page-title">Academic Background</h1><p class="page-sub">Islamic University of Technology · Notre Dame College · Bansherbada High School</p></div></div>
-  <div class="section-body"><div class="container"><div class="timeline">
-    <div class="tl-item reveal">
-      <div class="tl-left"><p class="tl-year">Aug 2022 — Sep 2026 (Expected)</p><p class="tl-org">Islamic University of Technology, Gazipur, Bangladesh</p></div>
-      <div class="tl-right"><h3 class="tl-degree">Bachelor of Science in Civil Engineering (Transportation Specialization)</h3><span class="tl-gpa">CGPA 3.65 / 4.00 · Last 3 Semesters: 3.87 / 4.00</span><p class="tl-detail"><strong>Major Courses:</strong> Transportation and Traffic Engineering, Transportation Projects and Operations, Public Transportation System, Pavement and Railway Engineering, GIS Application in Civil Engineering, Civil Engineering Data Analysis.<br><br><strong>Non-major Courses:</strong> Surveying, Water Supply Engineering, Open Channel Flow, Hydrology, Waste Management and Environmental Sanitation, Industrial Wastewater Engineering, Environmental Pollution and Its Control, Structure Analysis and Design (2 courses — 7 credits), Design of Concrete Structures (2 courses — 6 credits), Engineering Materials and Concrete Technology, Soil Mechanics, Foundation Engineering.<br><br><strong>Interdisciplinary Courses:</strong> Project Planning and Management, Engineering Economics and Accounting, Numerical Methods and Computer Programming, Probability and Statistics, Engineering Geology and Geomorphology, Ecology and Environment, Computer Programming and Application Lab (Python), Civil Engineering Drawing 2 (AutoCAD).</p></div>
-    </div>
-    <div class="tl-item reveal reveal-delay-1">
-      <div class="tl-left"><p class="tl-year">Jul 2019 — Dec 2021</p><p class="tl-org">Notre Dame College, Dhaka, Bangladesh</p></div>
-      <div class="tl-right"><h3 class="tl-degree">Higher Secondary Certificate (HSC)</h3><span class="tl-gpa">GPA 5.00 / 5.00</span><p class="tl-detail"><span class="badge">General Merit Scholarship</span><span class="badge">Perfect Attendance Certificate</span></p></div>
-    </div>
-    <div class="tl-item reveal reveal-delay-2">
-      <div class="tl-left"><p class="tl-year">Jan 2014 — Jun 2019</p><p class="tl-org">Bansherbada High School, Pabna, Bangladesh</p></div>
-      <div class="tl-right"><h3 class="tl-degree">Secondary School Certificate (SSC)</h3><span class="tl-gpa">GPA 5.00 / 5.00</span><p class="tl-detail"><span class="badge">General Merit Scholarship</span><span class="badge">President's Scout Award</span></p></div>
-    </div>
-  </div></div></div>
-  <footer><p>© Abir Ahmad</p><p>abirahmad-eng.github.io</p></footer>
+<div class="hero-actions">
+<a class="btn btn-primary" href="#research">View Research</a>
+<a class="btn btn-secondary" href="https://drive.google.com/drive/folders/1Y3I44Y3Th8dpLbaES0lmcbG579zUvVTr?usp=drive_link" rel="noopener noreferrer" target="_blank">View Resume ↗</a>
 </div>
-
-<!-- RESEARCH -->
-<div class="page" id="page-research">
-  <div class="page-header"><div class="container ph-inner"><p class="breadcrumb">// 02 — Research</p><h1 class="page-title">Research Interests</h1><p class="page-sub">Transportation Safety · Computer Vision · Intelligent Transportation Systems</p></div></div>
-  <div class="section-body"><div class="container"><div class="research-grid">
-    <div class="research-text reveal">
-      <p>My primary research focus is <strong>road safety and traffic conflict analysis using computer vision</strong>. For my undergraduate thesis, I am working with video footage collected from existing road cameras at intersections and road sections, training custom object detection models using <strong>YOLOv8 and Roboflow</strong>, and extracting traffic conflict parameters to better understand crash causation patterns.</p>
-      <p>Alongside this, I use <strong>Python</strong> for data processing and analysis, and plan to incorporate <strong>statistical modeling</strong> tools as the research progresses. I also work with <strong>SUMO</strong> for microsimulation, which helps me think about traffic behavior and road dynamics in a more structured way.</p>
-      <p>My broader interests span <strong>Intelligent Transportation Systems (ITS)</strong>, mobility data science, and the application of machine learning to transportation safety problems. These are areas I genuinely want to keep exploring, and I'm looking to pursue them further through doctoral research.</p>
-      <div class="tags-wrap"><span class="tag">Intelligent Transportation Systems</span><span class="tag">Road Safety Analysis</span><span class="tag">Computer Vision</span><span class="tag">Traffic Conflict Theory</span><span class="tag">Microsimulation</span><span class="tag">Machine Learning</span><span class="tag">Mobility Data Science</span></div>
-    </div>
-    <div class="tools-box reveal reveal-delay-1">
-      <p class="tools-label">// Tools & Technologies</p>
-      <div class="tool-row"><span class="tool-name">YOLOv8</span><span class="tool-cat">Object Detection</span></div>
-      <div class="tool-row"><span class="tool-name">Roboflow</span><span class="tool-cat">Annotation & Training</span></div>
-      <div class="tool-row"><span class="tool-name">SUMO</span><span class="tool-cat">Microsimulation</span></div>
-      <div class="tool-row"><span class="tool-name">PyTorch</span><span class="tool-cat">Deep Learning</span></div>
-      <div class="tool-row"><span class="tool-name">Python</span><span class="tool-cat">Data Processing</span></div>
-      <div class="tool-row"><span class="tool-name">QGIS</span><span class="tool-cat">GIS & Visualization</span></div>
-      <div class="tool-row"><span class="tool-name">SAM</span><span class="tool-cat">Segmentation</span></div>
-      <div class="tool-row"><span class="tool-name">Statistical Modeling</span><span class="tool-cat">Analysis</span></div>
-    </div>
-  </div></div></div>
-  <footer><p>© Abir Ahmad</p><p>abirahmad-eng.github.io</p></footer>
+<div aria-label="Profile links" class="social-row">
+<a href="mailto:abirahmad.ce@gmail.com">Email</a>
+<a href="https://www.linkedin.com/in/ahmadabir/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+<a href="https://github.com/abirahmad-ce" rel="noopener noreferrer" target="_blank">GitHub</a>
+<a href="https://orcid.org/0009-0004-3782-5302" rel="noopener noreferrer" target="_blank">ORCID</a>
 </div>
-
-<!-- PROJECTS -->
-<div class="page" id="page-projects">
-  <div class="page-header"><div class="container ph-inner"><p class="breadcrumb">// 03 — Projects</p><h1 class="page-title">Academic Projects</h1><p class="page-sub">Structural · Transportation · Water Resources · Design</p></div></div>
-  <div class="section-body"><div class="container"><div class="projects-grid">
-
-    <!-- P1: image 1D41mc3NJWx3DrOFnRfQ2-t2TxAtUn7J3 -->
-    <div class="project-card reveal">
-      <div class="project-img"><img src="https://drive.google.com/thumbnail?id=1D41mc3NJWx3DrOFnRfQ2-t2TxAtUn7J3&sz=w800" alt="Project 1" onerror="this.parentElement.style.display='none'"></div>
-      <div class="project-body">
-        <p class="project-num">PROJECT 01 · Nov 2025 – Mar 2026</p>
-        <h3 class="project-title">Structural Design and Analysis of an 8-Storied Reinforced Concrete Residential Building (BNBC 2020) using ETABS</h3>
-        <p class="project-desc">An individual academic project focused on the structural design and analysis of an 8-storied reinforced concrete residential building, carried out in compliance with the Bangladesh National Building Code (BNBC 2020). The project involved modeling the complete building structure in ETABS, defining load combinations, and analyzing structural behavior under gravity and lateral loads. Member sizing, reinforcement design, and code-based checks were performed to ensure the structure met safety and serviceability requirements. This project gave me a solid hands-on understanding of how structural analysis software translates real engineering principles into a buildable design.</p>
-        <div class="project-footer"><span class="project-tags">ETABS · MS Excel · BNBC 2020</span><a href="https://drive.google.com/drive/folders/17xGB5ilZTspdpNOqaOkErzLaxtEm7oIZ?usp=drive_link" target="_blank" class="btn-project">View Project</a></div>
-      </div>
-    </div>
-
-    <!-- P2: image 193VUwOqBtTkyWf33PaSwbuOYF2T939sj -->
-    <div class="project-card reveal reveal-delay-1">
-      <div class="project-img"><img src="https://drive.google.com/thumbnail?id=193VUwOqBtTkyWf33PaSwbuOYF2T939sj&sz=w800" alt="Project 2" onerror="this.parentElement.style.display='none'"></div>
-      <div class="project-body">
-        <p class="project-num">PROJECT 02 · Jun 2025 – Oct 2025</p>
-        <h3 class="project-title">Planning and Design of Water Supply System for a Textile Industrial Village</h3>
-        <p class="project-desc">A group academic project completed as part of the CEE 4634 Environmental Engineering Sessional 2 course. The project involved the end-to-end planning and design of a water supply system for a hypothetical 100-acre textile industrial village. Starting from scratch, we prepared a company organogram and master layout with proper roadway alignment, estimated the population, and calculated the overall water demand for the village. Based on that, we designed industrial groundwater wells, sized and located pumping stations, and developed a complete water distribution network supported by hydraulic calculations. Final drawings were produced in AutoCAD, with all calculations and data management handled in Microsoft Excel.</p>
-        <div class="project-footer"><span class="project-tags">AutoCAD · Microsoft Excel · Industrial Planning</span><a href="https://drive.google.com/drive/folders/1bEIdQOBkYmhFfb4MKwSdfCm8bAF6_zg8?usp=drive_link" target="_blank" class="btn-project">View Project</a></div>
-      </div>
-    </div>
-
-    <!-- P3: image 1EGq35x8_KjUy9x0SIhG6KrID0HvdmDQ2 -->
-    <div class="project-card reveal">
-      <div class="project-img"><img src="https://drive.google.com/thumbnail?id=1EGq35x8_KjUy9x0SIhG6KrID0HvdmDQ2&sz=w800" alt="Project 3" onerror="this.parentElement.style.display='none'"></div>
-      <div class="project-body">
-        <p class="project-num">PROJECT 03 · Feb 2026 – Mar 2026</p>
-        <h3 class="project-title">Pedestrian Truss Bridge Design Using CSI SAP2000</h3>
-        <p class="project-desc">An individual academic project completed as part of the CEE 4712 Structural Analysis and Design Sessional II course. A full 3D pedestrian truss bridge model was developed in SAP2000 using A992Fy50 steel, with nine distinct member types including chords, diagonals, floor beams, stringers, bracings, and portal frames. Dead and factored pedestrian live loads were applied, and an iterative trial and error process was carried out to revise and finalize member sections until all members passed the stress and capacity check. The final design confirmed expected truss behavior, with bending moments confined to floor beams and stringers while main truss members carried pure axial forces.</p>
-        <div class="project-footer"><span class="project-tags">SAP2000 · Truss Bridge · Pedestrian Bridge</span><a href="https://drive.google.com/drive/folders/1gP1AJYqM28JLIelUADnjA3IRBOcwCWP7?usp=drive_link" target="_blank" class="btn-project">View Project</a></div>
-      </div>
-    </div>
-
-    <!-- P4: no image -->
-    <div class="project-card reveal reveal-delay-1">
-      <div class="project-img"><img src="https://drive.google.com/thumbnail?id=12OifmU3EwOfH1uGru5JoeDG6ns4EJcI2&sz=w800" alt="Project 4" onerror="this.parentElement.style.display='none'"></div>
-<div class="project-body">
-        <p class="project-num">PROJECT 04 · May 2025 – Aug 2025</p>
-        <h3 class="project-title">Integrated Load Analysis and RCC Design of a Six Story Commercial Building Following BNBC 2020</h3>
-        <p class="project-desc">An individual academic project completed as part of the Design of Concrete Structures sessional. The project covered a full structural design workflow for a six-story reinforced concrete commercial building, following BNBC 2020 guidelines. I worked through every major structural component including slabs, staircases, beams, and columns, performing detailed vertical and lateral load calculations accounting for both wind and earthquake effects. Loads were distributed frame-wise to understand how individual members respond under combined loading conditions. ETABS was used for structural analysis, intermediate calculations were organized in Microsoft Excel, and final reinforcement detailing and construction drawings were completed in AutoCAD.</p>
-        <div class="project-footer"><span class="project-tags">AutoCAD · MS Excel · Seismic Design · Wind Load · ETABS</span><a href="https://drive.google.com/drive/folders/140O0apyH7gT1YQhDiPcBxuI2xOSYeBMX?usp=drive_link" target="_blank" class="btn-project">View Project</a></div>
-      </div>
-    </div>
-
-    <!-- P5: image 1pFg3sEGmArm71E9Npy-KmTUNUm_3wkyW -->
-    <div class="project-card reveal">
-      <div class="project-img"><img src="https://drive.google.com/thumbnail?id=1pFg3sEGmArm71E9Npy-KmTUNUm_3wkyW&sz=w800" alt="Project 5" onerror="this.parentElement.style.display='none'"></div>
-      <div class="project-body">
-        <p class="project-num">PROJECT 05 · August 2025</p>
-        <h3 class="project-title">Structural Analysis and Design of a Steel Truss Bridge Using SAP2000</h3>
-        <p class="project-desc">An individual academic project completed as part of the CEE 4614 Structural Analysis and Design Sessional 1 course. The project involved the structural analysis and design of an 11-meter steel truss bridge intended for an agricultural setting in Chittagong, a region characterized by significant wind exposure. A detailed 3D model was developed in SAP2000 with realistic support conditions and member properties. Load analysis covered dead loads including self-weight, roofing, and purlins, as well as live loads and wind loads calculated based on Chittagong's specified wind speed (80 m/s) and exposure category following BNBC 2020 provisions. Both windward and leeward wind effects were considered. Member forces were used to size and optimize the truss members for structural safety while keeping the design practical and economical.</p>
-        <div class="project-footer"><span class="project-tags">SAP2000 · Steel Design · Truss Bridge · Bridge Engineering</span><a href="https://drive.google.com/drive/folders/135Zp4dzMmouR6bebKs5sDKGcl4rKilw_?usp=drive_link" target="_blank" class="btn-project">View Project</a></div>
-      </div>
-    </div>
-
-    <!-- P6: no image -->
-    <div class="project-card reveal reveal-delay-1">
-      <div class="project-img"><img src="https://drive.google.com/thumbnail?id=1USPnXYy1BkbmU59q8YFkBWmTZCI8DeFr&sz=w800" alt="Project 6" onerror="this.parentElement.style.display='none'"></div>
-<div class="project-body">
-        <p class="project-num">PROJECT 06 · April 2023</p>
-        <h3 class="project-title">Detailed Architectural and Structural Drawings of a Six Storied Residential Building</h3>
-        <p class="project-desc">A group academic project completed as part of the CEE 4202 Civil Engineering Drawing II course. The project involved preparing a complete set of detailed drawings for a six storied residential building using AutoCAD. The drawing set covered floor plans for all levels including ground floor parking, first floor office space, and second to fifth floor apartment layouts. Structural drawings included column and beam layout plans, grade beam and floor beam long sections, footing layout, slab reinforcement details, stair reinforcement, column long sections with lapping and splice zone details, and beam column joint details. Each team member was responsible for specific sheets, contributing to a coordinated and complete drawing package.</p>
-        <div class="project-footer"><span class="project-tags">AutoCAD · Construction Drawing · Architectural Design</span><a href="https://drive.google.com/drive/folders/1PNjPGEioTu6Qd3XOEsSQLxJZX2FYxrFO?usp=drive_link" target="_blank" class="btn-project">View Project</a></div>
-      </div>
-    </div>
-
-  </div></div></div>
-  <footer><p>© Abir Ahmad</p><p>abirahmad-eng.github.io</p></footer>
 </div>
-
-<!-- SKILLS -->
-<div class="page" id="page-skills">
-  <div class="page-header"><div class="container ph-inner"><p class="breadcrumb">// 04 — Skills</p><h1 class="page-title">Technical Skills</h1><p class="page-sub">Tools and software across civil and transportation engineering</p></div></div>
-  <div class="section-body"><div class="container"><div class="skills-grid reveal">
-    <div class="skill-group"><p class="sg-title">Computer Vision & AI</p><div class="skill-item">YOLOv8</div><div class="skill-item">Roboflow</div><div class="skill-item">PyTorch</div><div class="skill-item">SAM (Segment Anything)</div></div>
-    <div class="skill-group"><p class="sg-title">Programming & Data</p><div class="skill-item">Python</div><div class="skill-item">HTML</div><div class="skill-item">MS Excel</div></div>
-    <div class="skill-group"><p class="sg-title">Simulation & GIS</p><div class="skill-item">SUMO (Microsimulation)</div><div class="skill-item">QGIS</div></div>
-    <div class="skill-group"><p class="sg-title">Structural Analysis</p><div class="skill-item">SAP2000</div><div class="skill-item">ETABS</div></div>
-    <div class="skill-group"><p class="sg-title">Design & Drafting</p><div class="skill-item">AutoCAD</div><div class="skill-item">Civil Engineering Drawing (Manual)</div></div>
-  </div></div></div>
-  <footer><p>© Abir Ahmad</p><p>abirahmad-eng.github.io</p></footer>
+<div class="portrait-wrap reveal">
+<div aria-hidden="true" class="portrait-accent"></div>
+<div class="portrait-card">
+<img alt="Portrait of Abir Ahmad" data-drive-id="1lnwYrzJ71fLHumxbfd0047LH1ajIX-ZB" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=1lnwYrzJ71fLHumxbfd0047LH1ajIX-ZB&amp;sz=w1200"/>
 </div>
-
-<!-- EXPERIENCE -->
-<div class="page" id="page-experience">
-  <div class="page-header"><div class="container ph-inner"><p class="breadcrumb">// 05 — Experience</p><h1 class="page-title">Professional Development</h1><p class="page-sub">Industrial training and teaching experience</p></div></div>
-  <div class="section-body"><div class="container">
-    <div class="exp-item reveal">
-      <div><p class="exp-date">Sep 28 – Oct 23, 2025</p><p class="exp-org">DOHWA Engineering Co. Ltd.</p></div>
-      <div>
-        <h3 class="exp-role">Industrial Training</h3><p class="exp-loc">Dhaka, Bangladesh</p>
-        <p class="exp-desc">DOHWA Engineering is a multinational engineering consultancy firm with large scale infrastructure projects across Bangladesh and beyond. During this training, I gained firsthand exposure to how a professional consultancy firm operates across its various departments, from project planning and construction supervision to quality assurance, documentation, and site coordination.</p>
-        <p class="exp-desc">I had the opportunity to observe ongoing projects including the <strong>Dhaka-Ashulia Elevated Expressway</strong> and the <strong>Dhaka Sanitation Improvement Project</strong>, which gave me a real sense of how critical decisions are made on the ground and how they influence project timelines and outcomes. Interacting with experienced engineers and project teams helped me understand the gap between academic knowledge and industry practice — and more importantly, how to bridge it.</p>
-        <p class="exp-desc">This experience deepened my appreciation for structured project management, safety compliance, and the scale of coordination required in infrastructure delivery at a professional level.</p>
-        <div class="exp-btns">
-          <a href="https://drive.google.com/drive/folders/1xyvIJFztSrhaUYJiV8MbQFqmaGPj2gim?usp=drive_link" target="_blank" class="exp-btn">📄 View Certificate</a>
-          <a href="https://drive.google.com/drive/folders/1AHa_FzGfOCLG2pH2jpECGLrVIZ2k22uS?usp=drive_link" target="_blank" class="exp-btn">📷 Site Photo 1</a>
-          <a href="https://drive.google.com/drive/folders/13ZhjqiVwmfYMXabiAGoCSImEFA8AJJWd?usp=drive_link" target="_blank" class="exp-btn">📷 Site Photo 2</a>
-        </div>
-      </div>
-    </div>
-    <div class="exp-item reveal">
-      <div><p class="exp-date">Jul 2025 – Present</p><p class="exp-org">IUT CAD Society</p></div>
-      <div>
-        <h3 class="exp-role">Instructor (AutoCAD)</h3><p class="exp-loc">Islamic University of Technology — Voluntary</p>
-        <p class="exp-desc">Served as a lead instructor for the IUT CAD Society, a student-run platform dedicated to advancing computer aided design skills among civil, mechanical, and allied engineering students at IUT.</p>
-        <p class="exp-desc">As a voluntary instructor, I conduct structured AutoCAD training workshops for junior engineering students. The sessions followed a fixed schedule and cover fundamentals through to 2D drafting proficiency, helping students build confidence in producing clean, accurate technical drawings. To date, I have worked with <strong>200+ students</strong> across multiple batches, providing both workshop instruction and one on one guidance where needed.</p>
-        <p class="exp-desc">It has been a genuinely rewarding experience. There is something satisfying about watching a first year student go from struggling with basic commands to submitting polished drawings for their coursework.</p>
-        <div class="exp-btns"><a href="https://drive.google.com/drive/folders/16465cEbYfo6X5abXyrJy9p59dX1sVgNC?usp=drive_link" target="_blank" class="exp-btn">📷 View Photos</a></div>
-      </div>
-    </div>
-  </div></div>
-  <footer><p>© Abir Ahmad</p><p>abirahmad-eng.github.io</p></footer>
+<div class="portrait-note"><strong>Transportation Engineering</strong>Traffic safety, ITS, and computer vision</div>
 </div>
-
-<!-- ACHIEVEMENTS -->
-<div class="page" id="page-achievements">
-  <div class="page-header"><div class="container ph-inner"><p class="breadcrumb">// 06 — Recognition</p><h1 class="page-title">Achievements & Awards</h1><p class="page-sub">Academic distinctions, national scholarships, and competition honors</p></div></div>
-  <div class="section-body"><div class="container"><div class="ach-grid">
-    <div class="ach-card reveal"><span class="ach-icon">🏆</span><h3 class="ach-title">Runners-Up, TRACTION 3.0 (AutoCAD Advanced Category)</h3><p class="ach-issuer">IUT CAD Society · April 2024</p><p class="ach-desc">Secured second place in the Advanced AutoCAD category of TRACTION 3.0, the annual flagship CAD competition organized by the IUT CAD Society, competing against second to fourth year students from across departments.</p><a href="https://drive.google.com/drive/folders/1OO-j2uXnDedtQrX9GIyvB4sHFYYcu5bF?usp=drive_link" target="_blank" class="ach-link">See Credential</a></div>
-    <div class="ach-card reveal reveal-delay-1"><span class="ach-icon">🏆</span><h3 class="ach-title">Runners-Up, TRACTION 2.0 (AutoCAD Beginner Segment)</h3><p class="ach-issuer">IUT CAD Society · March 2023</p><p class="ach-desc">Secured second place in the Beginner AutoCAD segment of TRACTION 2.0. Competed against first year students from various departments across IUT, demonstrating solid foundational skills in 2D drafting and technical accuracy during the very first year of undergraduate study.</p><a href="https://drive.google.com/drive/folders/12EVKy6qauprvcU_SxTLhWb-jPlSHaAls?usp=drive_link" target="_blank" class="ach-link">See Credential</a></div>
-    <div class="ach-card reveal reveal-delay-2"><span class="ach-icon">📜</span><h3 class="ach-title">General Merit Scholarship (HSC)</h3><p class="ach-issuer">Board of Education, Dhaka · March 2022</p><p class="ach-desc">Awarded the Government of Bangladesh's General Merit Scholarship for outstanding performance in the HSC Examination 2021, achieving a perfect GPA 5.00 (A+) under the Dhaka Education Board. Conferred on approximately the top 1% of over 1.3 million HSC candidates nationwide, with a monthly stipend from the Prime Minister's Education Assistance Trust.</p><a href="https://drive.google.com/drive/folders/1ME8DxHlNJwlw1k6kdmsASy9rJ1J7K8AT?usp=drive_link" target="_blank" class="ach-link">See Credential</a></div>
-    <div class="ach-card reveal"><span class="ach-icon">📜</span><h3 class="ach-title">General Merit Scholarship (SSC)</h3><p class="ach-issuer">Board of Education, Rajshahi · December 2019</p><p class="ach-desc">Awarded the Government of Bangladesh's General Merit Scholarship for exceptional performance in the SSC Examination 2019, achieving a perfect GPA 5.00 (A+) in all subjects under the Rajshahi Education Board. Granted to approximately the top 1% of over 2 million SSC candidates nationwide, with full tuition coverage for Higher Secondary studies and a monthly stipend.</p><a href="https://drive.google.com/drive/folders/1SWDvfxMfFi8PpxROZPO_Xad9g0diLkui?usp=drive_link" target="_blank" class="ach-link">See Credential</a></div>
-    <div class="ach-card reveal reveal-delay-1"><span class="ach-icon">🎖️</span><h3 class="ach-title">President's Scout Award</h3><p class="ach-issuer">Bangladesh Scouts · October 2019</p><p class="ach-desc">Recipient of the President's Scout Award, the highest honor in Bangladesh Scouts, presented directly by the President of the People's Republic of Bangladesh at a national investiture ceremony. Only a handful of scouts receive this recognition each year, selected through a rigorous multi-stage evaluation covering leadership, skill proficiency, community service, and demonstrated character. Earning this award required completing advanced training across first aid, pioneering, camping, and emergency preparedness, alongside sustained contributions to community development.</p><a href="https://drive.google.com/drive/folders/17QjLCGsohjax8JQdGGnM5pBo-Ns2J4HX?usp=drive_link" target="_blank" class="ach-link">See Credential</a></div>
-    <div class="ach-card reveal reveal-delay-2"><span class="ach-icon">✅</span><h3 class="ach-title">Perfect Attendance Certificate</h3><p class="ach-issuer">Notre Dame College · August 2021</p><p class="ach-desc">Awarded by Notre Dame College for maintaining 100% attendance across all classes, labs, and tutorials throughout the entire two year Higher Secondary program from 2019 to 2021 — including the COVID-19 period when classes shifted online. Notre Dame College is one of Bangladesh's most academically rigorous institutions, and this recognition is reserved only for students with zero absences across the full program.</p><a href="https://drive.google.com/drive/folders/1XOlotc6uhRIG6ee1ieCm5tyrg9UDs2Gj?usp=drive_link" target="_blank" class="ach-link">See Credential</a></div>
-  </div></div></div>
-  <footer><p>© Abir Ahmad</p><p>abirahmad-eng.github.io</p></footer>
 </div>
-
-<!-- MEMBERSHIPS -->
-<div class="page" id="page-memberships">
-  <div class="page-header"><div class="container ph-inner"><p class="breadcrumb">// 07 — Memberships</p><h1 class="page-title">Professional Organizations</h1><p class="page-sub">Active memberships in leading international engineering societies</p></div></div>
-  <div class="section-body"><div class="container"><div class="member-grid reveal">
-    <div class="member-card"><p class="member-abbr">ITE</p><p class="member-org">Institute of Transportation Engineers</p><p class="member-type">Student Member</p><p class="member-id">ID: 1102590 · Since August 2023</p></div>
-    <div class="member-card"><p class="member-abbr">ASCE</p><p class="member-org">American Society of Civil Engineers</p><p class="member-type">Society Student Member</p><p class="member-id">Member No: 12592285 · Since December 2025</p></div>
-    <div class="member-card"><p class="member-abbr">ACI</p><p class="member-org">American Concrete Institute</p><p class="member-type">Student Member</p><p class="member-id">ID: 2192955 · Since August 2023</p></div>
-    <div class="member-card"><p class="member-abbr">AAEES</p><p class="member-org">American Academy of Environmental Engineers and Scientists</p><p class="member-type">Student Member</p><p class="member-id">Member No: 12883 · Since September 2022</p></div>
-    <div class="member-card"><p class="member-abbr">WOSM</p><p class="member-org">World Organization of the Scout Movement</p><p class="member-type">Member</p><p class="member-id">Since January 2014</p></div>
-  </div></div></div>
-  <footer><p>© Abir Ahmad</p><p>abirahmad-eng.github.io</p></footer>
+</section>
+<section aria-hidden="true" class="alt page-view" id="education">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Education</p>
+<h2>Academic Background</h2>
+<div class="rule"></div>
 </div>
-
-<!-- EXTRACURRICULAR -->
-<div class="page" id="page-extracurricular">
-  <div class="page-header"><div class="container ph-inner"><p class="breadcrumb">// 08 — Leadership & Activities</p><h1 class="page-title">Extracurricular Activities</h1><p class="page-sub">Campus leadership, student organizations, and community service</p></div></div>
-  <div class="section-body"><div class="container"><div class="extra-grid">
-    <div class="extra-card reveal"><div class="extra-icon">A</div><div><p class="extra-role">Co-Head of Research and Development</p><p class="extra-org">Al Biruni Society of Scientific Studies</p><p class="extra-dates">December 2025 – Present</p><a href="https://drive.google.com/drive/folders/1YedCC5D1HoFswoNkHcU5ujLFi3uGgbM1?usp=drive_link" target="_blank" class="extra-cred">See Reference</a></div></div>
-    <div class="extra-card reveal reveal-delay-1"><div class="extra-icon">I</div><div><p class="extra-role">Notable Member</p><p class="extra-org">IUT ITE Student Chapter</p><p class="extra-dates">January 2026 – Present</p><a href="https://drive.google.com/drive/folders/10WwXlN8HUCPq1mWLymVNmdVFieOvIIgW?usp=drive_link" target="_blank" class="extra-cred">See Reference</a></div></div>
-    <div class="extra-card reveal"><div class="extra-icon">A</div><div><p class="extra-role">Assistant Head of Administration</p><p class="extra-org">ACI IUT Student Chapter</p><p class="extra-dates">November 2025 – Present</p><a href="https://drive.google.com/drive/folders/1yHzDPLs9hxmFioch02f0C144ceYzfLIA?usp=drive_link" target="_blank" class="extra-cred">See Reference</a></div></div>
-    <div class="extra-card reveal reveal-delay-1"><div class="extra-icon">A</div><div><p class="extra-role">Secretary of Administration</p><p class="extra-org">ACI IUT Student Chapter</p><p class="extra-dates">August 2024 – November 2025</p><a href="https://drive.google.com/drive/folders/1TjJ5bj68U6OZ7ZOcXwA0rrf-D9A1n3dC?usp=drive_link" target="_blank" class="extra-cred">See Reference</a></div></div>
-    <div class="extra-card reveal"><div class="extra-icon">A</div><div><p class="extra-role">Sub-Executive Committee Member</p><p class="extra-org">ACI IUT Student Chapter</p><p class="extra-dates">September 2023 – August 2024</p><a href="https://drive.google.com/drive/folders/1k8ENhFh01mgUCX9jHCzgKtp6Ai0YWD-x?usp=drive_link" target="_blank" class="extra-cred">See Reference</a></div></div>
-    <div class="extra-card reveal reveal-delay-1"><div class="extra-icon">S</div><div><p class="extra-role">Senior Patrol Leader</p><p class="extra-org">Bansherbada M.L. High School Scout Group</p><p class="extra-dates">January 2018 – June 2019</p><a href="https://drive.google.com/drive/folders/1LfsRG0ALeKmv-qnTqFX2bseuat50fkLM?usp=drive_link" target="_blank" class="extra-cred">See Reference</a></div></div>
-  </div></div></div>
-  <footer><p>© Abir Ahmad</p><p>abirahmad-eng.github.io</p></footer>
+<div class="education-grid">
+<article class="edu-card reveal">
+<div class="edu-date">August 2022 – October 2026</div>
+<div class="edu-main">
+<h3>Bachelor of Science (B.Sc.) in Civil Engineering (Major: Transportation Engineering)</h3>
+<p class="institution">Islamic University of Technology, Dhaka, Bangladesh</p>
+<span class="edu-result">CGPA 3.73 / 4.00 · Final 60 Credit Hours 3.99 / 4.00</span>
+<p><span class="course-label">Major courses:</span> Transportation and Traffic Engineering, Transportation Projects and Operations, Public Transportation System, Pavement and Railway Engineering, GIS Application in Civil Engineering, Civil Engineering Data Analysis.</p>
+<p><span class="course-label">Other notable courses:</span> Surveying, Environmental and Social Impact Assessment, Water Supply Engineering, Open Channel Flow, Hydrology, Waste Management and Environmental Sanitation, Industrial Wastewater Engineering, Environmental Pollution and Its Control, Structure Analysis and Design, Design of Concrete Structures, Engineering Materials and Concrete Technology, Soil Mechanics, Foundation Engineering.</p>
+<p><span class="course-label">Interdisciplinary courses:</span> Project Planning and Management, Engineering Economics and Accounting, Numerical Methods and Computer Programming, Probability and Statistics, Engineering Geology and Geomorphology, Ecology and Environment, Computer Programming and Application Lab (Python), Civil Engineering Drawing 2 (AutoCAD).</p>
 </div>
-
-<!-- CONTACT -->
-<div class="page" id="page-contact">
-  <div class="page-header"><div class="container ph-inner"><p class="breadcrumb">// 09 — Contact</p><h1 class="page-title">Let's Connect</h1><p class="page-sub">Open to research collaborations, industry opportunities, and academic connections</p></div></div>
-  <div class="section-body"><div class="container"><div class="contact-grid">
-    <div class="reveal">
-      <p class="contact-text">I'm open to connecting with researchers, faculty members, industry professionals, and anyone working in transportation engineering, road safety, or ITS. Feel free to reach out.</p>
-      <div class="cinfo-item"><span class="cinfo-label">Email</span><span class="cinfo-val"><a href="mailto:abirahmad.ce@gmail.com">abirahmad.ce@gmail.com</a></span></div>
-      <div class="cinfo-item"><span class="cinfo-label">Location</span><span class="cinfo-val">Dhaka, Bangladesh</span></div>
-      <div class="cinfo-item"><span class="cinfo-label">Institute</span><span class="cinfo-val">Islamic University of Technology</span></div>
-      <div class="cinfo-item"><span class="cinfo-label">ORCID</span><span class="cinfo-val"><a href="https://orcid.org/0009-0004-3782-5302" target="_blank">0009-0004-3782-5302</a></span></div>
-      <div class="c-links"><a href="https://www.linkedin.com/in/abirahmad-eng/" target="_blank" class="c-link">LinkedIn</a><a href="https://github.com/abirahmad-eng" target="_blank" class="c-link">GitHub</a><a href="mailto:abirahmad.ce@gmail.com" class="c-link">Email</a></div>
-    </div>
-    <div class="reveal reveal-delay-1">
-      <p style="font-size:.8rem;color:var(--gray-400);margin-bottom:20px">Send a message — I typically respond within 48 hours.</p>
-      <div class="form-row"><div class="form-field"><label>First Name</label><input type="text" placeholder="John"></div><div class="form-field"><label>Last Name</label><input type="text" placeholder="Doe"></div></div>
-      <div class="form-field"><label>Email</label><input type="email" placeholder="john@university.edu"></div>
-      <div class="form-field"><label>Subject</label><input type="text" placeholder="Research collaboration / PhD inquiry"></div>
-      <div class="form-field"><label>Message</label><textarea rows="5" placeholder="Your message..."></textarea></div>
-      <button class="btn-submit" onclick="alert('Thank you for reaching out! I will get back to you soon.')">Send Message</button>
-    </div>
-  </div></div></div>
-  <footer><p>© Abir Ahmad </p><p>abirahmad-eng.github.io</p></footer>
+</article>
+<article class="edu-card reveal">
+<div class="edu-date">July 2019 – December 2021</div>
+<div class="edu-main">
+<h3>Higher Secondary Certificate (HSC)</h3>
+<p class="institution">Notre Dame College, Dhaka, Bangladesh</p>
+<span class="edu-result">GPA 5.00 / 5.00</span>
+<p>General Merit Scholarship · Perfect Attendance Certificate</p>
 </div>
+</article>
+<article class="edu-card reveal">
+<div class="edu-date">January 2014 – June 2019</div>
+<div class="edu-main">
+<h3>Secondary School Certificate (SSC)</h3>
+<p class="institution">Bansherbada High School, Pabna, Bangladesh</p>
+<span class="edu-result">GPA 5.00 / 5.00</span>
+<p>General Merit Scholarship · President’s Scout Award</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section aria-hidden="true" class="page-view" id="research">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Research</p>
+<h2>Research Focus and Scholarly Work</h2>
+<div class="rule"></div>
+</div>
+<div class="research-layout">
+<div class="research-copy reveal">
+<p>My research interests are centered on <strong>transportation safety</strong>, <strong>intelligent transportation systems</strong>, <strong>traffic operations</strong>, and the use of <strong>computer vision and data-driven methods</strong> to better understand road-user behavior.</p>
+<p>My undergraduate research (thesis) focused on safety analysis at heterogeneous, non-lane-based traffic intersections in Dhaka, Bangladesh. I worked with naturalistic traffic video collected from five intersections and developed a computer vision pipeline for detecting and tracking different road users, transforming their movements into real-world trajectories, and evaluating traffic conflicts using surrogate safety measures such as <strong>Time-to-Collision (TTC)</strong>, <strong>Post-Encroachment Time (PET)</strong>, and <strong>Deceleration Rate to Avoid Collision (DRAC)</strong>. The work examined how conflict frequency and severity vary across signalized, manually controlled, and uncontrolled intersections.</p>
+<p>Through this work, I became particularly interested in the challenges of studying mixed traffic environments where conventional lane-based assumptions do not always hold. I am interested in how computer vision, trajectory data, simulation, and statistical or machine learning methods can be combined to better understand traffic interactions and support more proactive approaches to road safety.</p>
+<p>Looking ahead, I would like to explore broader problems in transportation engineering, including traffic safety, traffic flow and operations, intelligent transportation systems, connected and automated mobility, travel behavior, travel demand modeling, transportation data analytics, and the application of AI and machine learning in transportation. I am especially interested in research that connects methodological development with real-world transportation problems.</p>
+</div>
+<aside aria-label="Research interests" class="reveal">
+<p class="subhead" style="margin-top:0">Research Interests</p>
+<div class="research-chips"><span class="research-chip">Transportation Safety</span><span class="research-chip">Traffic Conflict Analysis</span><span class="research-chip">Intelligent Transportation Systems</span><span class="research-chip">Computer Vision and Deep Learning for Transportation</span><span class="research-chip">Traffic Operations &amp; Flow Modeling</span><span class="research-chip">Trajectory Analysis</span><span class="research-chip">Transportation Data Analytics</span><span class="research-chip">Machine Learning in Transportation</span><span class="research-chip">Connected &amp; Automated Mobility</span><span class="research-chip">Travel Behavior &amp; Demand Modeling</span><span class="research-chip">Transportation Systems Engineering</span><span class="research-chip">Freight Transportation</span></div>
+</aside>
+</div>
+<p class="subhead reveal">Manuscripts &amp; Publications</p>
+<div class="publication-list">
+<article class="publication reveal">
+<h3>Empirical Surrogate Safety Benchmarks for Heterogeneous Non-Lane-Based Traffic at Intersections Using Video-Derived Trajectories</h3>
+<p><strong>Abir Ahmad</strong>, Nusrat Nazia Matin, Tasnim Taleb, Md Asif Raihan, Mouyid Islam, and Moinul Hossain</p>
+<p>Transportation Research Board Annual Meeting 2027, Washington, D.C.</p>
+<div class="status-line"><span class="status">Accepted for Presentation</span><span class="status">Manuscript No. TRBAM-27-01804</span></div>
+</article>
+<article class="publication reveal">
+<h3>Multi-Measure Surrogate Safety Evaluation of Mixed-Traffic Intersections: A Computer Vision-Based Analysis Across Control Types</h3>
+<p><strong>Abir Ahmad</strong>, Nusrat Nazia Matin, Tasnim Taleb, Md Asif Raihan, Mouyid Islam, and Moinul Hossain</p>
+<div class="status-line"><span class="status">Manuscript in Preparation</span></div>
+</article>
+</div>
+<p class="subhead reveal">Academic Service</p>
+<div class="service-card reveal">
+<h3>Peer Reviewer, Transportation Research Board Annual Meeting 2027</h3>
+<p>August 2026 – September 2026 · Reviewed two manuscripts related to transportation safety planning and mixed traffic environments.</p>
+</div>
+</div>
+</section>
+<section aria-hidden="true" class="alt page-view" id="projects">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Projects</p>
+<h2>Selected Academic Work</h2>
+<p>A cross-section of my work in transportation, structural engineering, environmental engineering, and civil engineering design.</p>
+<div class="rule"></div>
+</div>
+<div aria-label="Project filters" class="filter-bar reveal">
+<button class="filter-btn active" data-filter="all" type="button">All</button>
+<button class="filter-btn" data-filter="transportation" type="button">Transportation</button>
+<button class="filter-btn" data-filter="structures" type="button">Structures</button>
+<button class="filter-btn" data-filter="environment" type="button">Environment</button>
+</div>
+<div class="projects-grid">
+<article class="project-card reveal featured" data-category="transportation">
+<div class="project-media">
+<img alt="Project preview: Transportation Impact Assessment and Design for a G+9 Residential Development, Cox’s Bazar" data-drive-id="1DFpfQ0v0Dm2JTrFOALu4wHTt3BRvwODe" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=1DFpfQ0v0Dm2JTrFOALu4wHTt3BRvwODe&amp;sz=w1600"/>
+<span aria-hidden="true" class="project-number">01</span>
+</div>
+<div class="project-content">
+<div class="project-meta"><span>Final Year Design Project</span><span class="featured-badge">Featured</span></div>
+<h3>Transportation Impact Assessment and Design for a G+9 Residential Development, Cox’s Bazar</h3>
+<p>Completed as part of the Final Year Design Project, this group project assessed the transportation impacts of a proposed 20-building residential development along National Highway N110 in Cox’s Bazar. The study covered <strong>traffic flow analysis</strong>, trip generation, AADT-based demand estimation, PCU and design-hour calculations, assessment of nearby intersections, access management, <strong>road safety</strong>, geometric improvements, and pavement design. <strong>SUMO</strong> was used to evaluate traffic operations, while the final recommendations addressed junction design, pedestrian safety, parking, and roadway improvements. My assigned contribution focused primarily on traffic flow analysis.</p>
+<div class="tags"><span class="tag">Traffic Impact Assessment</span><span class="tag">Traffic Flow Analysis</span><span class="tag">SUMO</span><span class="tag">Road Safety</span><span class="tag">Geometric Design</span></div>
+<div class="project-actions"><a class="project-button project-button-primary" href="https://drive.google.com/drive/folders/1pFiBsF3E6APqvYzJMiupiarWm09YjCy_?usp=drive_link" rel="noopener noreferrer" target="_blank">View Project</a></div></div>
+</article>
+<article class="project-card reveal featured" data-category="transportation">
+<div class="project-media">
+<img alt="Project preview: Signalized Intersection Design and Simulation in PTV VISSIM" data-drive-id="18wI2JJLNNj1SArDgu4c_LA_LhZ3X0JrL" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=18wI2JJLNNj1SArDgu4c_LA_LhZ3X0JrL&amp;sz=w1600"/>
+<span aria-hidden="true" class="project-number">02</span>
+</div>
+<div class="project-content">
+<div class="project-meta"><span>Academic Project</span><span class="featured-badge">Featured</span></div>
+<h3>Signalized Intersection Design and Simulation in PTV VISSIM</h3>
+<p>Designed and simulated a four-phase, four-leg signalized intersection for heterogeneous mixed traffic using <strong>PTV VISSIM</strong>. The project involved developing the intersection geometry, defining traffic inputs and turning movements, setting up signal control, and evaluating operational performance through measures such as <strong>queue length and vehicle delay</strong>. Based on the simulation outputs, <strong>signal timings</strong> were adjusted and optimized to improve traffic progression, reduce excessive queuing, and achieve a more balanced operation across the approaches. The project provided hands-on experience in linking intersection design decisions with microsimulation-based performance evaluation.</p>
+<div class="tags"><span class="tag">PTV VISSIM</span><span class="tag">Signal Timing</span><span class="tag">Microsimulation</span><span class="tag">Intersection Design</span><span class="tag">Traffic Operations</span></div>
+<div class="project-actions"><a class="project-button project-button-primary" href="https://drive.google.com/drive/folders/1COaYXGhmL0XFWs7h5dIn3dBDhjazl3dA?usp=drive_link" rel="noopener noreferrer" target="_blank">View Project</a></div></div>
+</article>
+<article class="project-card reveal featured" data-category="transportation">
+<div class="project-media">
+<img alt="Project preview: Flexible Pavement Design Using IITPAVE" data-drive-id="1d5G6ht1HwcHZq16Se_SUlwov_WG-geIH" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=1d5G6ht1HwcHZq16Se_SUlwov_WG-geIH&amp;sz=w1600"/>
+<span aria-hidden="true" class="project-number">03</span>
+</div>
+<div class="project-content">
+<div class="project-meta"><span>Academic Project</span><span class="featured-badge">Featured</span></div>
+<h3>Flexible Pavement Design Using IITPAVE</h3>
+<p>Designed a flexible pavement structure following <strong>IRC:37-2018</strong> using a mechanistic-empirical design approach. The work included calculating Vehicle Damage Factors, estimating cumulative design traffic in equivalent standard axle loads, determining allowable strain limits, and modeling the pavement as a multilayer elastic system in <strong>IITPAVE</strong>. Layer thicknesses were refined through several iterations by checking both <strong>subgrade rutting</strong> and <strong>bituminous fatigue cracking</strong> criteria. The final economical section consisted of a 150 mm bituminous layer, 120 mm granular base, and 140 mm granular subbase, with both critical strain requirements satisfied.</p>
+<div class="tags"><span class="tag">IITPAVE</span><span class="tag">IRC:37-2018</span><span class="tag">Flexible Pavement</span><span class="tag">ESAL</span><span class="tag">Mechanistic-Empirical Design</span></div>
+<div class="project-actions"><a class="project-button project-button-primary" href="https://drive.google.com/drive/folders/1V9TLzAE56y_ezkR83CugNkvWzBFQmxQA?usp=drive_link" rel="noopener noreferrer" target="_blank">View Project</a></div></div>
+</article>
+<article class="project-card reveal featured" data-category="environment">
+<div class="project-media">
+<img alt="Project preview: Environmental Impact Assessment of the Jamuna Railway Bridge Construction Project" data-drive-id="1pFdg0T4ZzNepBAMaJnTvYvzi-mfQKSQs" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=1pFdg0T4ZzNepBAMaJnTvYvzi-mfQKSQs&amp;sz=w1600"/>
+<span aria-hidden="true" class="project-number">04</span>
+</div>
+<div class="project-content">
+<div class="project-meta"><span>Academic Project</span><span class="featured-badge">Featured</span></div>
+<h3>Environmental Impact Assessment of the Jamuna Railway Bridge Construction Project</h3>
+<p>Prepared a comprehensive academic <strong>Environmental Impact Assessment</strong> for the Jamuna Railway Bridge project, a major 4.8 km dual-gauge, double-track railway crossing over the Jamuna River. The assessment reviewed the project’s physical, biological, and socio-economic baseline conditions and evaluated potential impacts during pre-construction, construction, and operation. It also examined project alternatives and considered issues including aquatic ecology, the Bangabandhu Eco-Park, noise and vibration, water quality, fisheries, river morphology, community impacts, and environmental compliance. The project concluded with an <strong>Environmental Management Plan</strong> covering mitigation measures, monitoring requirements, institutional responsibilities, stakeholder concerns, and implementation planning.</p>
+<div class="tags"><span class="tag">Environmental Impact Assessment</span><span class="tag">EMP</span><span class="tag">Environmental Management</span><span class="tag">Infrastructure</span><span class="tag">Sustainability</span></div>
+<div class="project-actions"><a class="project-button project-button-primary" href="https://drive.google.com/drive/folders/1zMNx7DddJx4Jz-XPRWpDr1k9Mvo_ra0F?usp=drive_link" rel="noopener noreferrer" target="_blank">View Project</a></div></div>
+</article>
+<article class="project-card reveal" data-category="structures">
+<div class="project-media" data-image-link="https://drive.google.com/file/d/1D41mc3NJWx3DrOFnRfQ2-t2TxAtUn7J3/view?usp=drive_link" role="group" title="Open project image">
+<img alt="Project preview: Structural Design and Analysis of an 8-Storied Reinforced Concrete Residential Building (BNBC 2020) using ETABS" data-drive-id="1D41mc3NJWx3DrOFnRfQ2-t2TxAtUn7J3" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=1D41mc3NJWx3DrOFnRfQ2-t2TxAtUn7J3&amp;sz=w1600"/><span aria-hidden="true" class="project-number">05</span>
+<a aria-label="Open full project image" class="project-media-open" href="https://drive.google.com/file/d/1D41mc3NJWx3DrOFnRfQ2-t2TxAtUn7J3/view?usp=drive_link" rel="noopener noreferrer" target="_blank"></a></div>
+<div class="project-content">
+<div class="project-meta"><span>November 2025 – March 2026</span></div>
+<h3>Structural Design and Analysis of an 8-Storied Reinforced Concrete Residential Building (BNBC 2020) using ETABS</h3>
+<p>This was an individual academic project focused on the structural design and analysis of an 8-storied reinforced concrete residential building, carried out in compliance with the Bangladesh National Building Code (<strong>BNBC 2020</strong>). The project involved modeling the complete building structure in <strong>ETABS</strong>, defining load combinations, and analyzing structural behavior under gravity and lateral loads. Member sizing, reinforcement design, and code-based checks were performed to ensure the structure met safety and serviceability requirements. This project gave me a solid hands-on understanding of how structural analysis software translates real engineering principles into a buildable design.</p>
+<div class="tags"><span class="tag">ETABS</span><span class="tag">MS Excel</span><span class="tag">BNBC 2020</span></div>
+<div class="project-actions"><a class="project-button project-button-primary" href="https://drive.google.com/drive/folders/17xGB5ilZTspdpNOqaOkErzLaxtEm7oIZ?usp=drive_link" rel="noopener noreferrer" target="_blank">View Project</a></div></div>
+</article>
+<article class="project-card reveal" data-category="environment">
+<div class="project-media" data-image-link="https://drive.google.com/file/d/193VUwOqBtTkyWf33PaSwbuOYF2T939sj/view?usp=drive_link" role="group" title="Open project image">
+<img alt="Project preview: Planning and Design of Water Supply System for a Textile Industrial Village" data-drive-id="193VUwOqBtTkyWf33PaSwbuOYF2T939sj" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=193VUwOqBtTkyWf33PaSwbuOYF2T939sj&amp;sz=w1600"/><span aria-hidden="true" class="project-number">06</span>
+<a aria-label="Open full project image" class="project-media-open" href="https://drive.google.com/file/d/193VUwOqBtTkyWf33PaSwbuOYF2T939sj/view?usp=drive_link" rel="noopener noreferrer" target="_blank"></a></div>
+<div class="project-content">
+<div class="project-meta"><span>June 2025 – October 2025</span></div>
+<h3>Planning and Design of Water Supply System for a Textile Industrial Village</h3>
+<p>This was a group academic project completed as part of the CEE 4634 Environmental Engineering Sessional 2 course. The project involved the end-to-end planning and design of a water supply system for a hypothetical 100-acre textile industrial village. Starting from scratch, we prepared a company organogram and master layout with proper roadway alignment, estimated the population, and calculated the overall water demand for the village. Based on that, we designed industrial groundwater wells, sized and located pumping stations, and developed a complete water distribution network supported by hydraulic calculations. Final drawings were produced in <strong>AutoCAD</strong>, with all calculations and data management handled in <strong>Microsoft Excel</strong>.</p>
+<div class="tags"><span class="tag">AutoCAD</span><span class="tag">Microsoft Excel</span><span class="tag">Industrial Planning</span></div>
+<div class="project-actions"><a class="project-button project-button-primary" href="https://drive.google.com/drive/folders/1bEIdQOBkYmhFfb4MKwSdfCm8bAF6_zg8?usp=drive_link" rel="noopener noreferrer" target="_blank">View Project</a></div></div>
+</article>
+<article class="project-card reveal" data-category="structures">
+<div class="project-media" data-image-link="https://drive.google.com/file/d/1EGq35x8_KjUy9x0SIhG6KrID0HvdmDQ2/view?usp=drive_link" role="group" title="Open project image">
+<img alt="Project preview: Pedestrian Truss Bridge Design Using CSI SAP2000" data-drive-id="1EGq35x8_KjUy9x0SIhG6KrID0HvdmDQ2" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=1EGq35x8_KjUy9x0SIhG6KrID0HvdmDQ2&amp;sz=w1600"/><span aria-hidden="true" class="project-number">07</span>
+<a aria-label="Open full project image" class="project-media-open" href="https://drive.google.com/file/d/1EGq35x8_KjUy9x0SIhG6KrID0HvdmDQ2/view?usp=drive_link" rel="noopener noreferrer" target="_blank"></a></div>
+<div class="project-content">
+<div class="project-meta"><span>February 2026 – March 2026</span></div>
+<h3>Pedestrian Truss Bridge Design Using CSI SAP2000</h3>
+<p>This was an individual academic project completed as part of the CEE 4712 Structural Analysis and Design Sessional II course. A full 3D pedestrian truss bridge model was developed in <strong>SAP2000</strong> using <strong>A992Fy50 steel</strong>, with nine distinct member types including chords, diagonals, floor beams, stringers, bracings, and portal frames. Dead and factored pedestrian live loads were applied, and an iterative trial and error process was carried out to revise and finalize member sections until all members passed the stress and capacity check. The final design confirmed expected truss behavior, with bending moments confined to floor beams and stringers while main truss members carried pure axial forces.</p>
+<div class="tags"><span class="tag">SAP2000</span><span class="tag">Truss Bridge</span><span class="tag">Pedestrian Bridge</span></div>
+<div class="project-actions"><a class="project-button project-button-primary" href="https://drive.google.com/drive/folders/1gP1AJYqM28JLIelUADnjA3IRBOcwCWP7?usp=drive_link" rel="noopener noreferrer" target="_blank">View Project</a></div></div>
+</article>
+<article class="project-card reveal" data-category="structures">
+<div class="project-media">
+<img alt="Project preview: Integrated Load Analysis and RCC Design of a Six Story Commercial Building Following BNBC 2020" data-drive-id="12OifmU3EwOfH1uGru5JoeDG6ns4EJcI2" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=12OifmU3EwOfH1uGru5JoeDG6ns4EJcI2&amp;sz=w1600"/>
+<span aria-hidden="true" class="project-number">08</span>
+</div>
+<div class="project-content">
+<div class="project-meta"><span>May 2025 – August 2025</span></div>
+<h3>Integrated Load Analysis and RCC Design of a Six Story Commercial Building Following BNBC 2020</h3>
+<p>This was an individual academic project completed as part of the Design of Concrete Structures sessional. The project covered a full structural design workflow for a six-story reinforced concrete commercial building, following <strong>BNBC 2020</strong> guidelines. I worked through every major structural component including slabs, staircases, beams, and columns, performing detailed vertical and lateral load calculations accounting for both wind and earthquake effects. Loads were distributed frame-wise to understand how individual members respond under combined loading conditions. <strong>ETABS</strong> was used for structural analysis to obtain moment, axial force, and shear force values, intermediate calculations were organized in <strong>Microsoft Excel</strong>, and final reinforcement detailing and construction drawings were completed in <strong>AutoCAD</strong>.</p>
+<div class="tags"><span class="tag">AutoCAD</span><span class="tag">Microsoft Excel</span><span class="tag">Seismic Design</span><span class="tag">Wind Load</span><span class="tag">Reinforcement Detailing</span></div>
+<div class="project-actions"><a class="project-button project-button-primary" href="https://drive.google.com/drive/folders/140O0apyH7gT1YQhDiPcBxuI2xOSYeBMX?usp=drive_link" rel="noopener noreferrer" target="_blank">View Project</a></div></div>
+</article>
+<article class="project-card reveal" data-category="structures">
+<div class="project-media" data-image-link="https://drive.google.com/file/d/1pFg3sEGmArm71E9Npy-KmTUNUm_3wkyW/view?usp=drive_link" role="group" title="Open project image">
+<img alt="Project preview: Structural Analysis and Design of a Steel Truss Bridge Using SAP2000" data-drive-id="1pFg3sEGmArm71E9Npy-KmTUNUm_3wkyW" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=1pFg3sEGmArm71E9Npy-KmTUNUm_3wkyW&amp;sz=w1600"/><span aria-hidden="true" class="project-number">09</span>
+<a aria-label="Open full project image" class="project-media-open" href="https://drive.google.com/file/d/1pFg3sEGmArm71E9Npy-KmTUNUm_3wkyW/view?usp=drive_link" rel="noopener noreferrer" target="_blank"></a></div>
+<div class="project-content">
+<div class="project-meta"><span>August 2025</span></div>
+<h3>Structural Analysis and Design of a Steel Truss Bridge Using SAP2000</h3>
+<p>This was an individual academic project completed as part of the CEE 4614 Structural Analysis and Design Sessional 1 course. The project involved the structural analysis and design of an 11-meter steel truss bridge intended for an agricultural setting in Chittagong, a region characterized by significant wind exposure. A detailed 3D model was developed in <strong>SAP2000</strong> with realistic support conditions and member properties. Load analysis covered dead loads including self-weight, roofing, and purlins, as well as live loads and wind loads calculated based on Chittagong's specified wind speed (80 m/s) and exposure category following <strong>BNBC 2020</strong> provisions. Both windward and leeward wind effects were considered in the analysis. Member forces obtained from the analysis were used to size and optimize the truss members for structural safety while keeping the design practical and economical.</p>
+<div class="tags"><span class="tag">SAP2000</span><span class="tag">Steel Design</span><span class="tag">Truss Bridge</span><span class="tag">Bridge Engineering</span></div>
+<div class="project-actions"><a class="project-button project-button-primary" href="https://drive.google.com/drive/folders/135Zp4dzMmouR6bebKs5sDKGcl4rKilw_?usp=drive_link" rel="noopener noreferrer" target="_blank">View Project</a></div></div>
+</article>
+<article class="project-card reveal" data-category="structures">
+<div class="project-media">
+<img alt="Project preview: Detailed Architectural and Structural Drawings of a Six Storied Residential Building" data-drive-id="1USPnXYy1BkbmU59q8YFkBWmTZCI8DeFr" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=1USPnXYy1BkbmU59q8YFkBWmTZCI8DeFr&amp;sz=w1600"/>
+<span aria-hidden="true" class="project-number">10</span>
+</div>
+<div class="project-content">
+<div class="project-meta"><span>April 2023</span></div>
+<h3>Detailed Architectural and Structural Drawings of a Six Storied Residential Building</h3>
+<p>This was a group academic project completed as part of the CEE 4202 Civil Engineering Drawing II course. The project involved preparing a complete set of detailed drawings for a six storied residential building using <strong>AutoCAD</strong>. The drawing set covered floor plans for all levels including ground floor parking, first floor office space, and second to fifth floor apartment layouts. Structural drawings included column and beam layout plans, grade beam and floor beam long sections, footing layout, slab reinforcement details, stair reinforcement, column long sections with lapping and splice zone details, and beam column joint details. Each team member was responsible for specific sheets, contributing to a coordinated and complete drawing package.</p>
+<div class="tags"><span class="tag">AutoCAD</span><span class="tag">Construction Drawing</span><span class="tag">Architectural Design</span></div>
+<div class="project-actions"><a class="project-button project-button-primary" href="https://drive.google.com/drive/folders/1PNjPGEioTu6Qd3XOEsSQLxJZX2FYxrFO?usp=drive_link" rel="noopener noreferrer" target="_blank">View Project</a></div></div>
+</article>
+</div>
+</div>
+</section>
+<section aria-hidden="true" class="page-view" id="skills">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Technical Skills</p>
+<h2>Tools I Work With</h2>
+<div class="rule"></div>
+</div>
+<div class="skills-grid">
+<article class="skill-card reveal"><h3>Transportation Modeling &amp; GIS</h3><div class="skill-list"><span>PTV VISSIM</span><span>SUMO</span><span>CUBE Voyager</span><span>QGIS</span></div></article>
+<article class="skill-card reveal"><h3>Pavement Design</h3><div class="skill-list"><span>IITPAVE</span></div></article>
+<article class="skill-card reveal"><h3>Computer Vision &amp; ML</h3><div class="skill-list"><span>YOLO (Ultralytics)</span><span>ByteTrack</span><span>OpenCV</span><span>NumPy</span><span>Roboflow</span><span>CVAT</span></div></article>
+<article class="skill-card reveal"><h3>Programming</h3><div class="skill-list"><span>Python</span><span>HTML5</span><span>Vibe Coding</span></div></article>
+<article class="skill-card reveal"><h3>CAD &amp; Structural Analysis</h3><div class="skill-list"><span>AutoCAD</span><span>ETABS</span><span>SAP2000</span></div></article>
+<article class="skill-card reveal"><h3>Documentation</h3><div class="skill-list"><span>MS Word</span><span>MS Excel</span><span>MS PowerPoint</span></div></article></div>
+</div>
+</section>
+<section aria-hidden="true" class="alt page-view" id="experience">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Professional Development</p>
+<h2>Industry Exposure and Teaching</h2>
+<div class="rule"></div>
+</div>
+<div class="experience-grid">
+<article class="experience-card reveal">
+<div class="exp-side">
+<p>September 28, 2025 – October 23, 2025</p>
+<strong>Dhaka, Bangladesh</strong>
+</div>
+<div class="exp-main">
+<h3>Industrial Training</h3>
+<p class="exp-org">DOHWA Engineering Co. Ltd.</p>
+<p>DOHWA Engineering is a multinational engineering consultancy firm with large scale infrastructure projects across Bangladesh and beyond. During this training, I gained firsthand exposure to how a professional consultancy firm operates across its various departments, from project planning and construction supervision to quality assurance, documentation, and site coordination.</p>
+<p>I had the opportunity to observe ongoing projects including the Dhaka-Ashulia Elevated Expressway and the Dhaka Sanitation Improvement Project, which gave me a real sense of how critical decisions are made on the ground and how they influence project timelines and outcomes. Interacting with experienced engineers and project teams helped me understand the gap between academic knowledge and industry practice and, more importantly, how to bridge it.</p>
+<p>This experience deepened my appreciation for structured project management, safety compliance, and the scale of coordination required in infrastructure delivery at a professional level.</p>
 
+</div>
+<div aria-label="Industrial training photos and certificate" class="experience-gallery industrial-gallery"><figure class="exp-photo-card fit-contain"><a aria-label="Open Industrial training certificate" class="exp-photo-link" href="https://drive.google.com/file/d/13V24ZM6BdXWtvBt1pl7gjAG4g-NQyPaN/view?usp=drive_link" rel="noopener noreferrer" target="_blank"><img alt="Industrial training certificate" data-drive-id="13V24ZM6BdXWtvBt1pl7gjAG4g-NQyPaN" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=13V24ZM6BdXWtvBt1pl7gjAG4g-NQyPaN&amp;sz=w1600"/></a><figcaption>Certificate</figcaption></figure><figure class="exp-photo-card fit-cover"><a aria-label="Open Photo 1 from DOHWA industrial training" class="exp-photo-link" href="https://drive.google.com/file/d/1Lg1h22r3tdwDp7QI11aNyZTJc0XpVOa8/view?usp=drive_link" rel="noopener noreferrer" target="_blank"><img alt="Photo 1 from DOHWA industrial training" data-drive-id="1Lg1h22r3tdwDp7QI11aNyZTJc0XpVOa8" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=1Lg1h22r3tdwDp7QI11aNyZTJc0XpVOa8&amp;sz=w1600"/></a><figcaption>Photo 1</figcaption></figure><figure class="exp-photo-card fit-cover"><a aria-label="Open Taking Certificate from DOHWA Director photo" class="exp-photo-link" href="https://drive.google.com/file/d/1kvEV8pKpuO08D3eYc9lD9Xc16fBxO-el/view?usp=drive_link" rel="noopener noreferrer" target="_blank"><img alt="Taking Certificate from DOHWA Director" data-drive-id="1kvEV8pKpuO08D3eYc9lD9Xc16fBxO-el" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=1kvEV8pKpuO08D3eYc9lD9Xc16fBxO-el&amp;sz=w1600"/></a><figcaption>Taking Certificate from DOHWA Director</figcaption></figure></div></article>
+<article class="experience-card reveal">
+<div class="exp-side">
+<p>December 2025 – August 2026</p>
+<strong>Islamic University of Technology</strong>
+</div>
+<div class="exp-main">
+<h3>Instructor (AutoCAD)</h3>
+<p class="exp-org">IUT CAD Society · Voluntary</p>
+<p>Served as a lead instructor for the IUT CAD Society, a student-run platform dedicated to advancing computer aided design skills among civil, mechanical, and allied engineering students at IUT.</p>
+<p>As a voluntary instructor, I conducted structured AutoCAD training workshops for junior engineering students. The sessions followed a fixed schedule and covered fundamentals through to 2D drafting proficiency, helping students build confidence in producing clean, accurate technical drawings. I worked with 200+ students across multiple batches, providing both workshop instruction and one on one guidance where needed.</p>
+<p>It has been a genuinely rewarding experience. There is something satisfying about watching a first year student go from struggling with basic commands to submitting polished drawings for their coursework.</p>
+
+</div>
+<div aria-label="AutoCAD teaching photo" class="experience-gallery single-photo-gallery"><figure class="exp-photo-card exp-photo-wide fit-cover"><a aria-label="Open AutoCAD teaching photo" class="exp-photo-link" href="https://drive.google.com/file/d/1a-zH_vL5-W66KBmBAnCczS9KLzgO5MVQ/view?usp=drive_link" rel="noopener noreferrer" target="_blank"><img alt="AutoCAD instruction at IUT CAD Society" data-drive-id="1a-zH_vL5-W66KBmBAnCczS9KLzgO5MVQ" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=1a-zH_vL5-W66KBmBAnCczS9KLzgO5MVQ&amp;sz=w1600"/></a><figcaption>IUT_CADS_EC</figcaption></figure></div></article>
+</div>
+</div>
+</section>
+<section aria-hidden="true" class="page-view" id="recognition">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Recognition &amp; Engagement</p>
+<h2>Awards, Memberships, and Leadership</h2>
+<div class="rule"></div>
+</div>
+<h3 class="group-title reveal first-group-title">Achievements &amp; Awards</h3><div class="achievement-grid">
+<article class="achievement-card reveal"><div class="achievement-media"><a aria-label="Open TRACTION 3.0 recognition" class="achievement-media-link" href="https://drive.google.com/file/d/1zjV0gpto_aLQCkp-fanKNM0EoFkwx4Bh/view?usp=drive_link" rel="noopener noreferrer" target="_blank"><img alt="TRACTION 3.0 recognition" data-drive-id="1zjV0gpto_aLQCkp-fanKNM0EoFkwx4Bh" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=1zjV0gpto_aLQCkp-fanKNM0EoFkwx4Bh&amp;sz=w1600"/></a></div>
+<div class="achievement-top"><span class="achievement-date">April 2024</span></div>
+<h3>Runners-Up, TRACTION 3.0 (AutoCAD Advanced Category)</h3>
+<p class="achievement-meta">IUT CAD Society, Islamic University of Technology</p>
+<p>Secured second place in the Advanced AutoCAD category of TRACTION 3.0, the annual flagship CAD competition organized by the IUT CAD Society, competing against second to fourth year students from across departments.</p>
+
+</article>
+<article class="achievement-card reveal"><div class="achievement-media"><a aria-label="Open TRACTION 2.0 recognition" class="achievement-media-link" href="https://drive.google.com/file/d/1THQAQV62yjCW6AY5zk8G8yH05NrkEShL/view?usp=drive_link" rel="noopener noreferrer" target="_blank"><img alt="TRACTION 2.0 recognition" data-drive-id="1THQAQV62yjCW6AY5zk8G8yH05NrkEShL" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=1THQAQV62yjCW6AY5zk8G8yH05NrkEShL&amp;sz=w1600"/></a></div>
+<div class="achievement-top"><span class="achievement-date">March 2023</span></div>
+<h3>Runners-Up, TRACTION 2.0 (AutoCAD Beginner Segment)</h3>
+<p class="achievement-meta">IUT CAD Society, Islamic University of Technology</p>
+<p>Secured second place in the Beginner AutoCAD segment of TRACTION 2.0, the annual flagship CAD competition organized by the IUT CAD Society. Competed against first year students from various departments across IUT, demonstrating solid foundational skills in 2D drafting and technical accuracy in AutoCAD during the very first year of undergraduate study.</p>
+
+</article>
+<article class="achievement-card reveal"><div class="achievement-media"><a aria-label="Open Higher Secondary General Merit Scholarship credential" class="achievement-media-link" href="https://drive.google.com/file/d/1HnVA3hECcLF5HmMHIjTp1A-mbPdMgoAk/view?usp=drive_link" rel="noopener noreferrer" target="_blank"><img alt="Higher Secondary General Merit Scholarship credential" data-drive-id="1HnVA3hECcLF5HmMHIjTp1A-mbPdMgoAk" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=1HnVA3hECcLF5HmMHIjTp1A-mbPdMgoAk&amp;sz=w1600"/></a></div>
+<div class="achievement-top"><span class="achievement-date">March 2022</span></div>
+<h3>General Merit Scholarship (HSC)</h3>
+<p class="achievement-meta">Board of Intermediate and Secondary Education, Dhaka</p>
+<p>Awarded the Government of Bangladesh's General Merit Scholarship for outstanding performance in the Higher Secondary Certificate (HSC) Examination 2021, achieving a perfect GPA 5.00 (A+) under the Dhaka Education Board. This scholarship is conferred on approximately the top 1% of over 1.3 million HSC candidates nationwide, and comes with a monthly stipend from the Prime Minister's Education Assistance Trust.</p>
+
+</article>
+<article class="achievement-card reveal"><div class="achievement-media"><a aria-label="Open Secondary School General Merit Scholarship credential" class="achievement-media-link" href="https://drive.google.com/file/d/1lnk2nUne0YvAJ4Q0CrEsw7_m569hTDea/view?usp=drive_link" rel="noopener noreferrer" target="_blank"><img alt="Secondary School General Merit Scholarship credential" data-drive-id="1lnk2nUne0YvAJ4Q0CrEsw7_m569hTDea" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=1lnk2nUne0YvAJ4Q0CrEsw7_m569hTDea&amp;sz=w1600"/></a></div>
+<div class="achievement-top"><span class="achievement-date">December 2019</span></div>
+<h3>General Merit Scholarship (SSC)</h3>
+<p class="achievement-meta">Board of Intermediate and Secondary Education, Rajshahi</p>
+<p>Awarded the Government of Bangladesh's General Merit Scholarship for exceptional performance in the Secondary School Certificate (SSC) Examination 2019, achieving a perfect GPA 5.00 (A+) in all subjects under the Rajshahi Education Board. This scholarship is granted to approximately the top 1% of over 2 million SSC candidates nationwide, and includes full tuition coverage for Higher Secondary studies along with a monthly stipend from the Prime Minister's Education Assistance Trust.</p>
+
+</article>
+<article class="achievement-card reveal"><div class="achievement-media"><a aria-label="Open President’s Scout Award recognition" class="achievement-media-link" href="https://drive.google.com/file/d/16rAb14wZzY57WF9lu2Szk-R48OVY1mtx/view?usp=drive_link" rel="noopener noreferrer" target="_blank"><img alt="President’s Scout Award recognition" data-drive-id="16rAb14wZzY57WF9lu2Szk-R48OVY1mtx" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=16rAb14wZzY57WF9lu2Szk-R48OVY1mtx&amp;sz=w1600"/></a></div>
+<div class="achievement-top"><span class="achievement-date">October 2019</span></div>
+<h3>President’s Scout Award</h3>
+<p class="achievement-meta">Bangladesh Scouts</p>
+<p>Recipient of the President's Scout Award, the highest honor in Bangladesh Scouts, presented directly by the President of the People's Republic of Bangladesh at a national investiture ceremony. Only a handful of scouts receive this recognition each year, selected through a rigorous multi-stage evaluation covering leadership, skill proficiency, community service, and demonstrated character aligned with the Scout Promise and Law. Earning this award required completing advanced training across first aid, pioneering, camping, and emergency preparedness, alongside sustained contributions to community development initiatives. It remains one of the most personally meaningful recognitions I have received, not for what it represents on paper, but for the values it stands for.</p>
+
+</article>
+<article class="achievement-card reveal"><div class="achievement-media"><a aria-label="Open Perfect Attendance Certificate" class="achievement-media-link" href="https://drive.google.com/file/d/1JihLBe8WBBSJ1LlZCFcH6EXMak9jLb75/view?usp=drive_link" rel="noopener noreferrer" target="_blank"><img alt="Perfect Attendance Certificate" data-drive-id="1JihLBe8WBBSJ1LlZCFcH6EXMak9jLb75" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=1JihLBe8WBBSJ1LlZCFcH6EXMak9jLb75&amp;sz=w1600"/></a></div>
+<div class="achievement-top"><span class="achievement-date">August 2021</span></div>
+<h3>Perfect Attendance Certificate</h3>
+<p class="achievement-meta">Notre Dame College, Dhaka</p>
+<p>Awarded by Notre Dame College for maintaining 100% attendance across all classes, labs, and tutorials throughout the entire two year Higher Secondary program from 2019 to 2021, including the COVID-19 period when classes shifted online. Notre Dame College is one of Bangladesh's most academically rigorous institutions, and this recognition is reserved only for students with zero absences across the full program.</p>
+
+</article>
+</div>
+<h3 class="group-title reveal">Professional Memberships</h3><div class="membership-grid">
+<article class="membership-card reveal">
+<h3>Institute of Transportation Engineers (ITE)</h3>
+<p>Student Member</p>
+<div class="membership-foot">
+<span>Since August 2023</span>
+<span>Member ID 1102590</span>
+</div>
+</article>
+<article class="membership-card reveal">
+<h3>American Society of Civil Engineers (ASCE)</h3>
+<p>Society Student Member</p>
+<div class="membership-foot">
+<span>Since December 2025</span>
+<span>Member ID 12592285</span>
+</div>
+</article>
+<article class="membership-card reveal">
+<h3>American Concrete Institute (ACI)</h3>
+<p>Student Member</p>
+<div class="membership-foot">
+<span>Since August 2023</span>
+<span>Member ID 2192955</span>
+</div>
+</article>
+<article class="membership-card reveal">
+<h3>American Academy of Environmental Engineers and Scientists (AAEES)</h3>
+<p>Student Member</p>
+<div class="membership-foot">
+<span>Since September 2022</span>
+<span>Member ID 12883</span>
+</div>
+</article>
+<article class="membership-card reveal">
+<h3>World Organization of the Scout Movement (WOSM)</h3>
+<p>Member</p>
+<div class="membership-foot">
+<span>Since January 2014</span>
+</div>
+</article>
+</div><h3 class="group-title reveal">Leadership &amp; Activities</h3><div class="leadership-list">
+<article class="leadership-row reveal">
+<div class="leadership-date">December 2025 – August 2026</div>
+<div class="leadership-main"><h3>Co-Head of Research and Development</h3><p>Al Biruni Society of Scientific Studies</p></div>
+
+<div class="leadership-media"><a aria-label="Open Co-Head of Research and Development reference" class="leadership-media-link" href="https://drive.google.com/file/d/17mbu7OJlc1TiMHolzRrCYBS_Vu67SvYm/view?usp=drive_link" rel="noopener noreferrer" target="_blank"><img alt="Co-Head of Research and Development reference" data-drive-id="17mbu7OJlc1TiMHolzRrCYBS_Vu67SvYm" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=17mbu7OJlc1TiMHolzRrCYBS_Vu67SvYm&amp;sz=w1600"/></a></div></article>
+<article class="leadership-row reveal">
+<div class="leadership-date">January 2026 – August 2026</div>
+<div class="leadership-main"><h3>Notable Member</h3><p>IUT ITE Student Chapter</p></div>
+
+<div class="leadership-media"><a aria-label="Open IUT ITE Student Chapter notable member reference" class="leadership-media-link" href="https://drive.google.com/file/d/1FK79rMBv39C3716C9TEWsA0OlaxmbCzh/view?usp=drive_link" rel="noopener noreferrer" target="_blank"><img alt="IUT ITE Student Chapter notable member reference" data-drive-id="1FK79rMBv39C3716C9TEWsA0OlaxmbCzh" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=1FK79rMBv39C3716C9TEWsA0OlaxmbCzh&amp;sz=w1600"/></a></div></article>
+<article class="leadership-row reveal">
+<div class="leadership-date">November 2025 – August 2026</div>
+<div class="leadership-main"><h3>Assistant Head of Administration</h3><p>ACI IUT Student Chapter</p></div>
+
+<div class="leadership-media"><a aria-label="Open Assistant Head of Administration reference" class="leadership-media-link" href="https://drive.google.com/file/d/1Af35Px1flUYo8-ZisS_Jru0KQrANihHm/view?usp=drive_link" rel="noopener noreferrer" target="_blank"><img alt="Assistant Head of Administration reference" data-drive-id="1Af35Px1flUYo8-ZisS_Jru0KQrANihHm" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=1Af35Px1flUYo8-ZisS_Jru0KQrANihHm&amp;sz=w1600"/></a></div></article>
+<article class="leadership-row reveal">
+<div class="leadership-date">August 2024 – November 2025</div>
+<div class="leadership-main"><h3>Secretary of Administration</h3><p>ACI IUT Student Chapter</p></div>
+
+<div class="leadership-media"><a aria-label="Open Secretary of Administration reference" class="leadership-media-link" href="https://drive.google.com/file/d/1Vp5l8xTUJ2dWMBvWlXdyq6XhL-f0yb5z/view?usp=drive_link" rel="noopener noreferrer" target="_blank"><img alt="Secretary of Administration reference" data-drive-id="1Vp5l8xTUJ2dWMBvWlXdyq6XhL-f0yb5z" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=1Vp5l8xTUJ2dWMBvWlXdyq6XhL-f0yb5z&amp;sz=w1600"/></a></div></article>
+<article class="leadership-row reveal">
+<div class="leadership-date">September 2023 – August 2024</div>
+<div class="leadership-main"><h3>Sub-Executive Committee Member</h3><p>ACI IUT Student Chapter</p></div>
+
+<div class="leadership-media"><a aria-label="Open Sub-Executive Committee Member reference" class="leadership-media-link" href="https://drive.google.com/file/d/1cK2Eq0F49qUUiCX8OSbQOPtXor6er0m7/view?usp=drive_link" rel="noopener noreferrer" target="_blank"><img alt="Sub-Executive Committee Member reference" data-drive-id="1cK2Eq0F49qUUiCX8OSbQOPtXor6er0m7" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=1cK2Eq0F49qUUiCX8OSbQOPtXor6er0m7&amp;sz=w1600"/></a></div></article>
+<article class="leadership-row reveal">
+<div class="leadership-date">January 2018 – June 2019</div>
+<div class="leadership-main"><h3>Senior Patrol Leader</h3><p>Bansherbada M.L. High School Scout Group</p></div>
+
+<div class="leadership-media"><a aria-label="Open Senior Patrol Leader reference photo 1" class="leadership-media-link" href="https://drive.google.com/file/d/1eRQufqsyg0Gw2KG_dR13StmNbctwzktl/view?usp=drive_link" rel="noopener noreferrer" target="_blank"><img alt="Senior Patrol Leader reference photo 1" data-drive-id="1eRQufqsyg0Gw2KG_dR13StmNbctwzktl" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=1eRQufqsyg0Gw2KG_dR13StmNbctwzktl&amp;sz=w1600"/></a><a aria-label="Open Senior Patrol Leader reference photo 2" class="leadership-media-link" href="https://drive.google.com/file/d/1jXfEQXhUxbdMHMIOngOpLBJ0ubFdJMW8/view?usp=drive_link" rel="noopener noreferrer" target="_blank"><img alt="Senior Patrol Leader reference photo 2" data-drive-id="1jXfEQXhUxbdMHMIOngOpLBJ0ubFdJMW8" loading="lazy" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=1jXfEQXhUxbdMHMIOngOpLBJ0ubFdJMW8&amp;sz=w1600"/></a></div></article>
+</div></div>
+</section>
+<section aria-hidden="true" class="alt page-view" id="contact">
+<div class="container"><div class="section-head reveal"><p class="eyebrow">Contact</p><h2>Get in Touch</h2><div class="rule"></div></div>
+<div class="contact-panel reveal">
+<div>
+<h2>Let’s Connect.</h2>
+<p>I’m open to connecting with researchers, faculty members, industry professionals, and anyone working in transportation engineering, traffic safety, or ITS. Feel free to reach out.</p>
+</div>
+<div class="contact-list">
+<a href="mailto:abirahmad.ce@gmail.com"><span>Email</span><span>abirahmad.ce@gmail.com</span></a>
+<a href="tel:+8801715498943"><span>Phone</span><span>+8801715498943</span></a>
+<a href="https://wa.me/8801715498943" rel="noopener noreferrer" target="_blank"><span>WhatsApp</span><span>+8801715498943 · @ahmad_abir ↗</span></a>
+<a href="https://www.linkedin.com/in/ahmadabir/" rel="noopener noreferrer" target="_blank"><span>LinkedIn</span><span>View profile ↗</span></a>
+<a href="https://github.com/abirahmad-ce" rel="noopener noreferrer" target="_blank"><span>GitHub</span><span>View profile ↗</span></a>
+<a href="https://orcid.org/0009-0004-3782-5302" rel="noopener noreferrer" target="_blank"><span>ORCID</span><span>View profile ↗</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="container footer-row"><span>Abir Ahmad</span><a href="https://abirahmad-ce.github.io/" rel="noopener noreferrer" target="_blank">abirahmad-ce.github.io</a></div>
+</footer>
 <script>
-function showPage(name){
-  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
-  document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));
-  document.getElementById('page-'+name).classList.add('active');
-  const el=document.getElementById('nav-'+name);
-  if(el)el.classList.add('active');
-  window.scrollTo(0,0);
-  document.getElementById('navLinks').classList.remove('open');
-  setTimeout(initReveal,50);
-}
-function toggleMenu(){document.getElementById('navLinks').classList.toggle('open')}
-function initReveal(){
-  const obs=new IntersectionObserver(entries=>{
-    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}});
-  },{threshold:0.08});
-  document.querySelectorAll('.page.active .reveal').forEach(el=>{el.classList.remove('visible');obs.observe(el)});
-}
-document.addEventListener('DOMContentLoaded',initReveal);
-</script>
+    (function () {
+      const EDIT_STORAGE_KEY = 'abirPortfolioManualEditsV2';
+      const editSelectors = [
+        'main h1', 'main h2', 'main h3', 'main p',
+        'main .hero-kicker', 'main .hero-tagline',
+        'main .edu-date', 'main .edu-result',
+        'main .project-meta span', 'main .tag', 'main .skill-list span',
+        'main .achievement-date', 'main .membership-foot span',
+        'main .leadership-date'
+      ];
+
+      function cleanEditableState(root) {
+        root.querySelectorAll('[contenteditable]').forEach(function (el) {
+          el.removeAttribute('contenteditable');
+          el.removeAttribute('spellcheck');
+        });
+      }
+
+      function restoreLocalEdits() {
+        const main = document.querySelector('main');
+        if (!main) return;
+        try {
+          const saved = localStorage.getItem(EDIT_STORAGE_KEY);
+          if (saved) main.innerHTML = saved;
+        } catch (e) { /* storage may be disabled */ }
+      }
+
+      restoreLocalEdits();
+
+      function setEditing(enabled) {
+        document.body.classList.toggle('editing-mode', enabled);
+        document.querySelectorAll(editSelectors.join(',')).forEach(function (el) {
+          if (enabled) {
+            el.setAttribute('contenteditable', 'true');
+            el.setAttribute('spellcheck', 'true');
+          } else {
+            el.removeAttribute('contenteditable');
+            el.removeAttribute('spellcheck');
+          }
+        });
+        const toggleBtn = document.getElementById('editorToggle');
+        if (toggleBtn) toggleBtn.textContent = enabled ? 'Stop editing' : 'Edit text';
+        const status = document.getElementById('editorStatus');
+        if (status) status.textContent = enabled ? 'Click text on the page and type.' : 'Editing is off.';
+      }
+
+      function saveLocalEdits() {
+        const main = document.querySelector('main');
+        if (!main) return;
+        const clone = main.cloneNode(true);
+        cleanEditableState(clone);
+        try {
+          localStorage.setItem(EDIT_STORAGE_KEY, clone.innerHTML);
+          const status = document.getElementById('editorStatus');
+          if (status) status.textContent = 'Saved in this browser.';
+        } catch (e) {
+          alert('Your browser blocked local storage. Use Download HTML instead.');
+        }
+      }
+
+      function resetLocalEdits() {
+        if (!confirm('Clear locally saved portfolio edits and reload the original file?')) return;
+        try { localStorage.removeItem(EDIT_STORAGE_KEY); } catch (e) {}
+        location.reload();
+      }
+
+      function downloadEditedHtml() {
+        const clone = document.documentElement.cloneNode(true);
+        cleanEditableState(clone);
+        clone.querySelectorAll('.editor-toolbar').forEach(function (el) { el.remove(); });
+        clone.querySelectorAll('.page-view').forEach(function (page) {
+          const active = page.id === 'about';
+          page.classList.toggle('active', active);
+          page.setAttribute('aria-hidden', String(!active));
+        });
+        clone.querySelectorAll('.nav-links a[href^="#"]').forEach(function (link) {
+          const active = link.getAttribute('href') === '#about';
+          link.classList.toggle('active', active);
+          if (active) link.setAttribute('aria-current', 'page');
+          else link.removeAttribute('aria-current');
+        });
+        clone.querySelector('body')?.classList.remove('editing-mode');
+        const html='<!DOCTYPE html>\n'+clone.outerHTML;
+        const blob=new Blob([html],{type:'text/html;charset=utf-8'});
+        const url=URL.createObjectURL(blob);
+        const a=document.createElement('a');
+        a.href=url; a.download='index.html';
+        document.body.appendChild(a); a.click(); a.remove();
+        setTimeout(function(){ URL.revokeObjectURL(url); }, 1000);
+        const status = document.getElementById('editorStatus');
+        if (status) status.textContent = 'Updated index.html downloaded.';
+      }
+
+      function setupEditor() {
+        const params = new URLSearchParams(location.search);
+        const toolbar = document.createElement('div');
+        toolbar.className = 'editor-toolbar';
+        toolbar.id = 'editorToolbar';
+        toolbar.setAttribute('role','region');
+        toolbar.setAttribute('aria-label','Portfolio editing tools');
+        toolbar.innerHTML = '<strong>Portfolio editor</strong>' +
+          '<button class="editor-btn primary" id="editorToggle" type="button">Edit text</button>' +
+          '<button class="editor-btn" id="editorSave" type="button">Save locally</button>' +
+          '<button class="editor-btn" id="editorDownload" type="button">Download HTML</button>' +
+          '<button class="editor-btn" id="editorReset" type="button">Reset</button>' +
+          '<span class="editor-status" id="editorStatus">Editing is off.</span>';
+        document.body.appendChild(toolbar);
+        let enabled = false;
+        function showToolbar() { toolbar.classList.add('visible'); }
+        if (params.get('edit') === '1') showToolbar();
+        document.addEventListener('keydown', function (event) {
+          if (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === 'e') {
+            event.preventDefault();
+            showToolbar();
+          }
+        });
+        document.getElementById('editorToggle').addEventListener('click', function () {
+          enabled = !enabled; setEditing(enabled);
+        });
+        document.getElementById('editorSave').addEventListener('click', saveLocalEdits);
+        document.getElementById('editorDownload').addEventListener('click', downloadEditedHtml);
+        document.getElementById('editorReset').addEventListener('click', resetLocalEdits);
+      }
+
+      function setupDriveImages() {
+        document.querySelectorAll('img[data-drive-id]').forEach(function (img) {
+          const id = img.dataset.driveId;
+          if (!id) return;
+          const candidates = [
+            'https://drive.google.com/thumbnail?id=' + encodeURIComponent(id) + '&sz=w1600',
+            'https://drive.usercontent.google.com/download?id=' + encodeURIComponent(id) + '&export=view',
+            'https://lh3.googleusercontent.com/d/' + encodeURIComponent(id) + '=w1600',
+            'https://drive.google.com/uc?export=view&id=' + encodeURIComponent(id)
+          ];
+          let index = Math.max(0, candidates.indexOf(img.src));
+          img.addEventListener('error', function () {
+            index += 1;
+            if (index < candidates.length) {
+              img.src = candidates[index];
+            } else {
+              img.classList.add('drive-image-unavailable');
+              const media = img.closest('.project-media, .exp-photo-card, .achievement-media, .leadership-media-link');
+              if (media) {
+                media.classList.add('drive-media-unavailable');
+                if (media.classList.contains('project-media')) media.classList.add('media-fallback');
+              }
+            }
+          });
+        });
+      }
+
+      setupDriveImages();
+      setupEditor();
+
+      const year = document.getElementById('year');
+      if (year) year.textContent = new Date().getFullYear();
+
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.getElementById('navLinks');
+      const pageViews = Array.from(document.querySelectorAll('.page-view'));
+      const sectionLinks = Array.from(document.querySelectorAll('.nav-links a[href^="#"]'));
+      const validPages = new Set(pageViews.map(function (page) { return page.id; }));
+      const pageAliases = { memberships: 'recognition', leadership: 'recognition' };
+
+      function closeMenu() {
+        if (!nav || !toggle) return;
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+
+      if (toggle && nav) {
+        toggle.addEventListener('click', function () {
+          const open = nav.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', String(open));
+        });
+      }
+
+      const revealEls = document.querySelectorAll('.reveal');
+      let revealObserver = null;
+      if ('IntersectionObserver' in window) {
+        revealObserver = new IntersectionObserver(function (entries, observer) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.08 });
+        revealEls.forEach(function (el) { revealObserver.observe(el); });
+      } else {
+        revealEls.forEach(function (el) { el.classList.add('visible'); });
+      }
+
+      function showPage(pageId, options) {
+        options = options || {};
+        pageId = pageAliases[pageId] || pageId;
+        if (!validPages.has(pageId)) pageId = 'about';
+
+        pageViews.forEach(function (page) {
+          const isActive = page.id === pageId;
+          page.classList.toggle('active', isActive);
+          page.setAttribute('aria-hidden', String(!isActive));
+        });
+
+        sectionLinks.forEach(function (link) {
+          const target = link.getAttribute('href').slice(1);
+          const isActive = target === pageId;
+          link.classList.toggle('active', isActive);
+          if (isActive) link.setAttribute('aria-current', 'page');
+          else link.removeAttribute('aria-current');
+        });
+
+        closeMenu();
+
+        const activePage = document.getElementById(pageId);
+        if (activePage) {
+          const activeReveal = activePage.querySelectorAll('.reveal');
+          activeReveal.forEach(function (el) {
+            if (revealObserver && !el.classList.contains('visible')) revealObserver.observe(el);
+          });
+        }
+
+        if (options.updateHistory !== false) {
+          const newHash = '#' + pageId;
+          if (window.location.hash !== newHash) {
+            history.pushState({ page: pageId }, '', newHash);
+          }
+        }
+
+        if (options.scroll !== false) {
+          window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+        }
+      }
+
+      // Route every link that points to one of the portfolio views.
+      document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+        link.addEventListener('click', function (event) {
+          const href = link.getAttribute('href');
+          if (!href || href.length < 2) return;
+          const pageId = href.slice(1);
+          if (!validPages.has(pageId) && !pageAliases[pageId]) return;
+          event.preventDefault();
+          showPage(pageId);
+        });
+      });
+
+      window.addEventListener('popstate', function () {
+        const pageId = window.location.hash.slice(1) || 'about';
+        showPage(pageId, { updateHistory: false });
+      });
+
+      // Open a directly linked section, or About when the site is opened normally.
+      showPage(window.location.hash.slice(1) || 'about', {
+        updateHistory: false,
+        scroll: false
+      });
+
+      const filters = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.project-card');
+      filters.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const value = btn.dataset.filter;
+          filters.forEach(function (b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          cards.forEach(function (card) {
+            const show = value === 'all' || card.dataset.category === value;
+            card.classList.toggle('hidden', !show);
+          });
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
